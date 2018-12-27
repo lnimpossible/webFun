@@ -1,0 +1,100 @@
+/* 已选人员 */
+.arrows-blue{
+    color: #47c7f4;
+}
+.arrows-yellow{
+    color: #fff200;
+}
+.chose-person{
+    width: 530px;
+    height: 554px;
+    background: url('../../../static/image/layout/common/chose-person-bg.png') no-repeat;
+    padding: 20px 0 0 30px;
+    position: relative;
+    font-size: 12px;
+    color: #0ae9ff;
+}
+.chose-person-title{
+	font-size: 14px;
+}
+.chose-person-main{
+    height: 390px;
+    margin-top: 40px;
+    line-height: 24px;
+}
+.choice-person-crumb{
+	line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    padding-left: 20px;
+    background: url('../../../static/image/layout/common/chose-person-crumb-bg.png') no-repeat;
+}
+.choice-person-person{
+	width: 108px;
+	background: rgba(17,57,60,0.8);
+	border-radius: 4px;
+	float: left;
+	margin: 0 16px 10px 0;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+}
+.choice-person-chosed{
+	background: #fcb90e;
+}
+.choice-person-group{
+	width: 150px;
+	font-size: 14px;
+	background: rgba(17,57,60,0.8);
+	clear: both;
+	margin-bottom: 10px;
+	cursor: pointer;
+	box-sizing: border-box;
+	padding-left: 20px;
+}
+
+.choice-person-bottom{
+    position: absolute;
+    bottom: 58px;
+    left: 66px;
+}
+.choice-person-bottom li{
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    color: #20cefc;
+    font-size: 13px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.choice-person-bottom .active{
+    color: #fff200;
+}
+.chose-person-voice, .chose-person-video,
+.chose-person-all, .chose-person-reverse{
+    width: 80px;
+    height: 40px;
+    background: url('../../../static/image/layout/common/selected-person-voice.png') no-repeat;
+
+}
+.chose-person-groupchat{
+    width: 220px;
+    height: 40px;
+    background: url('../../../static/image/layout/common/selected-person-group.png') no-repeat;
+}
+.nearby_partList{
+    padding: 5px;
+    background: rgba(17,57,61,0.8);
+    color: #fff;
+}
+.chose-person-sure{
+	width: 400px;
+	height: 40px;
+	border-radius: 4px;
+	box-shadow: 0 0 5px 3px rgba(46,212,254,0.1) inset;
+	cursor: pointer;
+	    line-height: 40px;
+    text-align: center;
+    margin: 0 auto;
+}

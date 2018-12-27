@@ -1,0 +1,64 @@
+/* 
+ * 多选设备列表 
+ * */
+.selected-thing{
+    width: 430px;
+    height: 304px;
+    background: url('../../../static/image/layout/common/selected-camera-bg.png') no-repeat;
+    padding: 20px 0 0 30px;
+    position: relative;
+    font-size: 12px;
+    color: #0ae9ff;
+}
+.selected-thing-name{
+    font-size: 14px;
+}
+.selected-thing-body{
+	width: 100%;
+    overflow: hidden;
+    height: calc(100% - 60px);
+    color: #fdfdfe;
+    font-size: 12px;
+} 
+.selected-thing-item1,
+.selected-thing-item2,
+.selected-thing-item3{
+    line-height: 24px;
+	display: inline-block;
+	background-color:rgba(12,54,57,0.8);
+    border-radius: 4px;
+}
+.selected-thing-item1{
+	width: 165px;
+   	padding-left: 15px;
+}
+.selected-thing-item2{
+	width: 88px;
+    margin-left: 8px;
+    text-align: center;
+}
+.selected-thing-item3{
+	min-width: 80px;
+    margin-right: 8px;
+    text-align: center;
+}
+.selected-thing-actions{
+    margin-right: 30px;
+}
+.selected-thing-action{
+	text-align: center;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+.mutiple-thing-box{
+	height: 100%;
+}
+.selected-thing-active{
+	color: #fcb90e !important;
+}
+.selected-person-item{
+	cursor: pointer;
+}
+.selected-camera-item{
+	cursor: pointer;
+}

@@ -1,0 +1,190 @@
+<div class="chat flex justify-between">
+	<div class="chat-close"></div>
+	<div class="chat-l">
+		<div class="chat-l-t flex justify-between">
+			<div class="chat-search">
+				<input class="chat-search-input" type="text" />
+				<div class="chat-search-cover">
+					<i class="fa fa-lg fa-search"></i>
+					搜索联系人
+				</div>
+			</div>
+			<div class="add-group" c-title="创建群聊">
+				<i class="fa fa-plus"></i>
+			</div>
+		</div>
+		<div class="chat-tabs flex justify-around item-center ">
+			<div class="chat-tab chat-tab1 chat-tab-active"></div>
+			<div class="chat-tab chat-tab2"></div>
+		</div>
+		<div class="chat-cards">
+			<ul class="chat-card chat-list nice-scroll"></ul>          <!--聊天会话列表-->
+			<div class="chat-card chat-person">
+				<div class="chat-card-crumb"></div>
+				<ul class="chat-person-list nice-scroll"></ul>
+			</div>	<!--人员列表....-->
+		</div>
+	</div>
+	<div class="chat-r">
+		<div id='chatContainer' class="chat-container">
+			<div id="chatContent" class="chat-content">
+				<div class="chat-head-div"><span class="chat-head"></span><span class="look-up"></span></div>
+				<div class="chat-content-content" >
+					<ul id='groupMemberContainer' class="group-member-ul">
+					</ul>
+
+					 <ul id="chatMessages" class="chat-messages border-bottom nice-scroll"></ul>
+					 <div class="chat-options">
+						<i  class="select-image"><input type="file" id="selectImageBtn"></i>
+						<img id="sendVoiceChat" class="select-voice" src="./static/image/chat/voice.png" >
+						<img id="sendVideoChat" class="select-video" src="./static/image/chat/video.png">
+					 </div>
+					<div class="chat-text-field">
+						<textarea name="message-to-send" class="nice-scroll" id="message-to-send" placeholder="请输入消息" ></textarea>
+						<div id="sendMessageBtn">发送</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div  id='noticeContainer'class="chat-container">
+			<div id="noticeContent" class="chat-content">
+				<div class="notice-content-head">
+					<p>工作通知</p>
+					<p>上海天覆信息科技有限公司</p>
+				</div>
+				<ul id='noticeList' class="notice-content-content notice-list nice-scroll">
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="talkinterface-wrap-d">
+		<header class="talkinterface-header-d">
+			<span class="talkinterface-targetname-d">聊天对象name</span>
+			<div class="talkinterface-function-d">
+				<div class="close-icon-d gesture-d" title="关闭" onclick="talkinterface_D.close()">
+					<div class="talkinterface-close-d"></div>
+				</div>
+				<div class="minimize-icon-d gesture-d" title="最小化" onclick="talkinterface_D.minimize()">
+					<div class="talkinterface-minimize-d"></div>
+				</div>
+				<div class="invite-icon-d m-s-d100 gesture-d" title="邀请新成员" onclick="talkinterface_D.invite()"></div>
+			</div>
+		</header>
+		<div class="talkinterface-container-d">
+			<!-- 单独语音 -->
+			<div class="talkinterface-voice-1-d" type="voice-1">
+				<div class="talkinterface-user-bigportraits-d">
+					<img src="" alt="">
+				</div>
+			</div>
+			<!-- 多人语音 -->
+			<div class="talkinterface-voice-multi-d" type="voice-multi">
+				<div class="talkinterface-voicemulti-user-d">
+					<div class="talkinterface-user-smallportraits-d"></div>
+					<div>我</div>
+					<div>已加入</div>
+				</div>
+				<div class="talkinterface-voicemulti-user-d">
+					<div class="talkinterface-user-smallportraits-d"></div>
+					<div>cell</div>
+					<div>正在连接 <dot>...</dot></div>
+				</div>
+				<div class="talkinterface-voicemulti-user-d">
+					<div class="talkinterface-user-smallportraits-d"></div>
+					<div>cell</div>
+					<div>正在连接 <dot>...</dot></div>
+				</div>
+				<div class="talkinterface-voicemulti-user-d">
+					<div class="talkinterface-user-smallportraits-d"></div>
+					<div>cell</div>
+					<div>正在连接 <dot>...</dot></div>
+				</div>
+				<div class="talkinterface-voicemulti-user-d">
+					<div class="talkinterface-user-smallportraits-d"></div>
+					<div>cell</div>
+					<div>正在连接 <dot>...</dot></div>
+				</div>
+				<div class="talkinterface-voicemulti-user-d">
+					<div class="talkinterface-user-smallportraits-d"></div>
+					<div>cell</div>
+					<div>正在连接 <dot>...</dot></div>
+				</div>
+				<div class="talkinterface-voicemulti-user-d">
+					<div class="talkinterface-user-smallportraits-d"></div>
+					<div>cell</div>
+					<div>正在连接 <dot>...</dot></div>
+				</div>
+				<div class="talkinterface-voicemulti-user-d">
+					<div class="talkinterface-user-smallportraits-d"></div>
+					<div>cell</div>
+					<div>正在连接 <dot>...</dot></div>
+				</div>
+				<div class="talkinterface-voicemulti-user-d">
+					<div class="talkinterface-user-smallportraits-d"></div>
+					<div>cell</div>
+					<div>正在连接 <dot>...</dot></div>
+				</div>
+			</div>
+			<!-- 单人视频 -->
+			<div class="talkinterface-video-1-d" type="video-1">
+				<div class="talkinterface-video1-bigframe-d">
+					<div id='videoContainer' class="video-container js-video-exchange">
+						<!--<video src="http://www.runoob.com/try/demo_source/movie.mp4" ></video>-->
+					</div>
+					<div id="videoContainerLocation" class="video-container-location js-video-exchange">
+					</div>
+				</div>
+				<div class="talkinterface-video1-smallframe-d">
+					<div></div>
+					<div class="tabframe-icon-d m-s-d100 gesture-d" onclick="talkinterface_D.tabFrame()"></div>
+				</div>
+			</div>
+			<!-- 多人视频 -->
+			<div class="talkinterface-video-multi-d" type="video-multi">
+				<div id="videoMulti1" class="talkinterface-videomulti-user-d"></div>
+				<div id="videoMulti2"  class="talkinterface-videomulti-user-d"></div>
+				<div id="videoMulti3" class="talkinterface-videomulti-user-d"></div>
+				<div id="videoMulti4" class="talkinterface-videomulti-user-d"></div>
+				<div id="videoMulti5" class="talkinterface-videomulti-user-d"></div>
+				<div id="videoMulti6" class="talkinterface-videomulti-user-d"></div>
+				<div id="videoMulti7" class="talkinterface-videomulti-user-d"></div>
+				<div id="videoMulti8" class="talkinterface-videomulti-user-d"></div>
+				<div id="videoMulti9" class="talkinterface-videomulti-user-d"></div>
+			</div>
+		</div>
+		<footer class="talkinterface-footer-d">
+			<div class="talkinterface-callin-d callin-icon-d m-s-d100 gesture-d" onclick="talkinterface_D.answer()"></div>
+			<div class="talkinterface-hangup-d hangup-icon-d m-s-d100 gesture-d" onclick="talkinterface_D.hangup()"></div>
+			<div class="talkinterface-status-d">
+				<div type="create">正在连接 <dot>...</dot></div>
+				<div id="talkinterface-timer" style="display: none;" type="duration">00:00</div>
+			</div>
+			<div class="talkinterface-footer-function-d">
+				<div class="talkinterface-footer-function-item gesture-d" type="静音" onclick="talkinterface_D.soundoff()">
+					<span class="soundoff-icon-d"></span>
+					<span>静音</span>
+				</div>
+				<div class="talkinterface-footer-function-item gesture-d"
+					 type="语音" onclick="talkinterface_D.tabvoice()">
+					<span class="tabvoice-icon-d"></span>
+					<span>切换语音</span>
+				</div>
+				<div class="talkinterface-footer-function-item gesture-d" type="视频" onclick="talkinterface_D.tabvideo()">
+					<span class="tabvideo-icon-d"></span>
+					<span>切换视频</span>
+				</div>
+		</footer>
+	</div>
+	<div class="talkinterface-minimize-wrap-d gesture-d m-s-d100" onclick="talkinterface_D.recover()"></div>
+</div>
+<script src="./src/components/chat/event.js"></script>
+<script src="./src/components/chat/AgoraSig-1.4.0.js"></script>
+<script src="./src/components/chat/AgoraRTCSDK-2.3.1.js"></script>
+<script src="./src/components/chat/chatUtils.js"></script>
+<script src="./src/components/chat/chatwindow.js"></script>
+<script src="./src/components/chat/voiceAndVideoChat.js"></script>
+<script src="./src/components/chat/signalingClient.js"></script>
+<script src="./src/components/chat/meeting.js"></script>
+<script src="./src/components/chat/chatInit.js"></script>
+<script src="./src/components/chat/action.js"></script>
+<script src="./src/components/chat/effect.js"></script>

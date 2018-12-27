@@ -1,0 +1,137 @@
+/*
+ * 漫游飞行
+ */
+.freefly{
+	width: 100%;
+	height: 100%;
+	background: url('../../../static/image/layout/freefly/freefly-total-bg.png');
+	background-size: 100% 100%;
+	overflow: hidden;
+}
+
+/*返回*/
+.freefly-back{
+	position: absolute;
+    top: 10px;
+    left: 20px;
+    width: 80px;
+    line-height: 80px;
+    text-align: center;
+    cursor: pointer;
+    user-select: none;
+}
+.freefly-back-motion{
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+}
+
+/*路线选择*/
+.freefly-route{
+	width: 200px;
+	height: 45px;
+	position: absolute;
+	top: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.route{
+	width: 40px;
+	line-height: 35px;
+	font-size: 14px;
+	text-align: center;
+	color: #fff;
+	cursor: pointer;
+	user-select: none;
+	background: url('../../../static/image/layout/freefly/route-bg.png');
+	margin: 5px auto 0;
+}
+.route:hover{
+	transform: scale(1.2);
+}
+.route-active{
+	background-position: bottom;
+}
+.swiper-container{
+	width: 100%;
+	height: 100%;
+}
+
+/*速度控制*/
+.speed-control{
+	width: 240px;
+	height: 120px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	bottom: 48px;
+	background: url('../../../static/image/layout/freefly/speed-control-bg.png');
+	text-align: center;
+	color: #20cefc;
+	font-family: Fzxqjw;
+}
+.speed-control-slide{
+	width: 240px;
+	height: 240px;
+	position: absolute;
+	left: 0;
+	top: -100%;
+	transform: rotateZ(0deg);
+	user-select: none;
+}
+.slide{
+	width: 40px;
+	height: 34px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: -17px;
+	cursor: pointer;
+	user-select: none;
+	background: url('../../../static/image/layout/freefly/speed-control-slide.png');
+}
+.live-speed-title{
+	margin-top: -55px;
+}
+.speed-range{
+	color: #fff;
+	font-size: 14px;
+}
+.live-speed{
+	font-family: Fzxqjw;
+	font-size: 60px;
+}
+
+/*实时飞行高度*/
+.altitude{
+	width: 60px;
+	height: 342px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 50px;
+	font-size: 14px;
+	color: #2bbdfb;
+	text-align: right;
+}
+.indicator{
+	display: inline-block;
+	width: 20px;
+	height: 300px;
+	box-sizing: border-box;
+	border: 2px solid #20cefc;
+	border-left: none;
+	position: relative;
+}
+.altitude-pointer{
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+.path-wrap{
+	display: flex;
+    justify-content: space-around;
+}

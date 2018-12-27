@@ -1,0 +1,374 @@
+html,body{
+	width: 100%;
+	height: 100%;
+	user-select: none;
+    overflow: hidden;
+}
+*{
+    margin:0;
+    padding:0;
+}
+/*字体*/
+@font-face{
+	font-family: Fzxqjw;
+	src: url('../../static/font/fzxqjw/FZXQJW.TTF'),
+	url('../../static/font/fzxqjw/FZXQJW.dfont'),
+	url('../../static/font/fzxqjw/FZXQJW.eot'),
+	url('../../static/font/fzxqjw/FZXQJW.otf'),
+	url('../../static/font/fzxqjw/FZXQJW.woff'),
+	url('../../static/font/fzxqjw/FZXQJW.woff2');
+}
+
+/*字体大小*/
+.fs12{
+	font-size: 12px;
+}
+
+/*flex布局*/
+.flex{
+	display: flex;
+}
+.flex-wrap{
+	flex-wrap: wrap;
+}
+.flex-column{
+	display: flex;
+	flex-direction: column;
+}
+.justify-center{
+	justify-content: center;
+}
+.justify-between{
+	justify-content: space-between;
+}
+.justify-around{
+	justify-content: space-around;
+}
+.item-center{
+	align-items: center;
+}
+.clear{
+	clear: both;
+}
+
+/*浮动布局*/
+.fl{
+	float: left;
+}
+.fr{
+	float: right;
+}
+
+.cursor-pointer{
+	cursor: pointer;
+}
+.pr{
+	position: relative;
+}
+.pa{
+	position: absolute;
+}
+.position-center{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.point-event-none{
+	pointer-events: none;
+}
+.point-event-auto{
+	pointer-events: auto;
+}
+.in-line{
+	display: inline-block;
+}
+.no-select{
+    user-select:none;
+}
+.over-ellipsis{
+    word-break: break-all;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+}
+
+.display-none{
+	display: none;
+}
+.hidden{
+	visibility: hidden;
+}
+/*margin padding*/
+.ml8{
+	margin-left: 8px;
+}
+.ml10{
+	margin-left: 10px;
+}
+.ml20{
+	margin-left: 20px;
+}
+.ml30{
+	margin-left: 30px;
+}
+.mt5{
+	margin-top: 5px;
+}
+.mt10{
+	margin-top: 10px;
+}
+.mt20{
+	margin-top: 20px;
+}
+.mt30{
+	margin-top: 30px;
+}
+.mt70{
+	margin-top: 70px;
+}
+
+.mr5{
+	margin-right: 5px;
+}
+.mr8{
+	margin-right: 8px;
+}
+.mr10{
+	margin-right: 10px;
+}
+.mr20{
+	margin-right: 20px;
+}
+.mr30{
+	margin-right: 30px;
+}
+.mr40{
+	margin-right: 40px;
+}
+.mb5{
+	margin-bottom: 5px;
+}
+.mb10{
+	margin-bottom: 10px;
+}
+.mb14{
+	margin-bottom: 14px;
+}
+.mb20{
+	margin-bottom: 20px;
+}
+.mb40{
+	margin-bottom: 40px;
+}
+.pr10{
+	padding-right: 10px;
+}
+
+/*verticle-align*/
+.v-a-m{
+	vertical-align: middle;
+}
+.tac{
+	text-align: center;
+}
+
+/*标识状态的圆点*/
+.red-state-dot{
+	display: inline-block;
+    width: 4px;
+    height: 4px;
+    padding: 1px;
+    border: 2px solid rgb(221,49,49,0.5);
+    border-radius: 50%;
+    background-clip: content-box;
+    background-color: #dd3131;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.green-state-dot{
+	display: inline-block;
+    width: 4px;
+    height: 4px;
+    padding: 1px;
+    border: 2px solid rgb(10,255,45,0.5);
+    border-radius: 50%;
+    background-clip: content-box;
+    background-color: #0aff2d;
+    vertical-align: middle;
+    margin-right: 8px;
+}
+.red-dot{
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	background: #ed1c24;
+	border-radius: 50%;
+	position: absolute;
+	top: 0;
+	right: 2px;
+}
+.yellow-dot{
+	display: inline-block;
+    width: 4px;
+    height: 4px;
+    padding: 1px;
+    border: 2px solid #fcb90e;
+    border-radius: 50%;
+    background-clip: content-box;
+    background-color: #fcb90e;
+}
+.blue-dot{
+	display: inline-block;
+    width: 4px;
+    height: 4px;
+    padding: 1px;
+    border: 2px solid #0ae9ff;
+    border-radius: 50%;
+    background-clip: content-box;
+    background-color: #0ae9ff;
+}
+
+
+ul,li{ padding:0;margin:0;list-style:none}
+input{
+	border: none;
+	background: none;
+	outline: none;
+}
+
+/*动画*/
+.clockwise{
+	animation: clockWise 4s linear infinite;
+}
+.anticlockwise{
+	animation: anticlockWise 4s linear infinite;
+}
+.clockwise3d{
+	animation: clockWise3d 4s linear infinite;
+}
+.fade-in-out{
+	animation: fadeInOut 2s ease-in-out;
+}
+.center-scale{
+	transform-origin: left;
+	animation: centerScale .5s ease-in-out;
+}
+@keyframes clockWise{
+	0%{
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(360deg);
+        -ms-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+@keyframes clockWise3d{
+	0%{
+        -webkit-transform: rotateX(70deg) rotateZ(0deg);
+        -ms-transform: rotateX(70deg) rotateZ(0deg);
+        transform: rotateX(70deg) rotateZ(0deg);
+    }
+    100%{
+        -webkit-transform: rotateX(70deg) rotateZ(360deg);
+        -ms-transform: rotateX(70deg) rotateZ(360deg);
+        transform: rotateX(70deg) rotateZ(360deg);
+    }
+}
+@keyframes anticlockWise{
+	0%{
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100%{
+        -webkit-transform: rotate(-360deg);
+        -ms-transform: rotate(-360deg);
+        transform: rotate(-360deg);
+    }
+}
+@keyframes centerScale{
+	/*0%{
+        -webkit-transform: scale(0,0);
+        -ms-transform: scale(0,0);
+        transform: scale(0,0);
+    }
+    100%{
+        -webkit-transform: scale(1,1);
+        -ms-transform: scale(1,1);
+        transform: scale(1,1);
+    }*/
+   0%{
+        -webkit-transform: scaleX(0);
+        -ms-transform: scaleX(0);
+        transform: scaleX(0);
+    }
+    100%{
+        -webkit-transform: scaleX(1);
+        -ms-transform: scaleX(1);
+        transform: scaleX(1);
+    }
+}
+@keyframes fadeInOut{
+    0% {
+        opacity: 0;
+        transform: translate3d(-50%, 0, 0);
+    }
+    25% {
+        opacity: 1;
+        transform: translate3d(-50%, 100%, 0);
+    }
+    75% {
+        opacity: 1;
+        transform: translate3d(-50%, 100%, 0);
+    }
+    100% {
+        opacity: 0;
+        transform: translate3d(-50%, 0, 0);
+    }
+}
+@keyframes glow1{
+	0% {box-shadow: 0 0 30px 3px #fe0954;}
+    100% {box-shadow: none;}
+}
+@keyframes glow2{
+	0% {box-shadow: 0 0 30px 3px #fbc608;}
+    100% {box-shadow: none;}
+}
+@keyframes glow3{
+	0% {box-shadow: 0 0 30px 3px #099dfe;}
+    100% {box-shadow: none;}
+}
+/*
+author：louis
+使用方法
+-webkit-animation: scaleAndRotate3d 5s linear infinite backwards;
+-moz-animation: scaleAndRotate3d 5s linear infinite backwards;
+animation: scaleAndRotate3d 5s linear infinite backwards;
+*/
+@keyframes scaleAndRotate3d {
+    5% {
+        -webkit-transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, -10deg);
+        transform: scale3d(1, 1, 1) rotate3d(0, 0, 1, -10deg);
+    }
+
+    6%, 8%, 10%, 12% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 10deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 10deg);
+    }
+
+    7%, 9%, 11% {
+        -webkit-transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -10deg);
+        transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -10deg);
+    }
+
+    13% {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+    }
+}

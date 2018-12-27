@@ -1,0 +1,14 @@
+#scale-line{
+    width:100px;
+    height:20px;
+    position:absolute;
+    bottom: 20px;
+    left: 20px;
+    z-index: 2000;
+}
+.custom-scale-line{
+    font-size:16px;
+    color:white;
+    /*border:1px solid #ffffff;*/
+    /*border-top: none;*/
+}

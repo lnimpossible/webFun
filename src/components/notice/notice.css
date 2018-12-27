@@ -1,0 +1,87 @@
+/*
+ * 提示框，确认框
+ */
+.message-box{
+	width: 100%;
+	position: absolute;
+	top: 16px;
+}
+.g-message{
+	width: 260px;
+	height: 130px;
+	background: url('../../../static/image/layout/notice-message-bg.png');
+	position: absolute;
+	top: -50px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	z-index: 20;
+	color: #0ae9ff;
+	font-size: 12px;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 39px 10px;
+}
+.message-text{
+	/*line-height: 50px;*/
+	height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.g-message-down{
+	animation: gMessageDown 0.3s ease-in;
+	animation-fill-mode: forwards;
+}
+.g-message-up{
+	animation: gMessageUp 0.3s ease-in;
+	animation-fill-mode: forwards;
+}
+/*@keyframes gMessageDown{
+	from{top: -50px;}
+	to{top: 50px}
+}
+@keyframes gMessageUp{
+	from{top: 50px;}
+	to{top: -50px}
+}*/
+@keyframes gMessageDown{
+	from{}
+	to{transform: translateY(100%);}
+}
+@keyframes gMessageUp{
+	from{transform: translateY(100%)}
+	to{transform: translateY(0)}
+}
+
+.g-confirm-box{
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,0.3);
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 20;
+}
+.g-confirm{
+	width: 260px;
+	height: 130px;
+	background: url('../../../static/image/layout/notice-message-bg.png');
+	z-index: 20;
+	color: #0ae9ff;
+	font-size: 12px;
+	text-align: center;
+	box-sizing: border-box;
+	padding: 39px 10px 0;
+}
+.confirm-text{
+	line-height: 50px;
+	margin-bottom: 7px;
+}
+.confirm-btn{
+	width: 80px;
+	line-height: 24px;
+	text-align: center;
+	cursor: pointer;
+	background: url('../../../static/image/layout/common/layer-choose-button.png');
+}

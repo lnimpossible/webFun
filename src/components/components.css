@@ -1,0 +1,66 @@
+/*位置不变的组件*/
+@import url("./stationary/stationary.css");
+
+/*图表*/
+@import url("./chart/chart.css");
+
+/*聊天*/
+@import url("./chat/chat.css");
+
+/*公告*/
+@import url("./announcement/announcement.css");
+
+/*最新情况*/
+@import url("./newestChat/newestChat.css");
+
+/*最新聊天*/
+@import url("./newestSituation/newestSituation.css");
+
+/* 派发任务 */
+@import url("./newTask/newTask.css");
+
+/* 选择人员 */
+@import url("./chosePerson/chosePerson.css");
+
+/*设备人员详情*/
+@import url("./thingDetail/thingDetail.css");
+
+/*框选多选设备人员列表*/         
+@import url("./selectedThing/selectedThing.css");
+
+/*新建情况*/
+@import url("./newSituation/newSituation.css");
+
+/*新建任务*/
+@import url("./newTask/newTask.css");
+
+/*弹出操作*/
+@import url("./ejection/ejection.css");
+
+/*提示框,确认框*/
+@import url("./notice/notice.css");
+
+/*事件选择*/
+@import url("./trackerDate/trackerDate.css");
+
+.back-btn,
+.close-btn{
+	width: 78px;
+	line-height: 24px;
+	position: absolute;
+    top: 30px;
+    cursor: pointer;
+    background-color: #0b3336;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.back-btn{
+    right: 116px;
+    color: #0ae9ff;
+}
+.close-btn{
+	right: 30px;
+    color: #dd3131;
+}

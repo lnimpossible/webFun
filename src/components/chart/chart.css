@@ -1,0 +1,137 @@
+/*首页图表*/
+.monitor-chart-wrap{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.monitor-chart-title{
+	line-height: 30px;
+	color: #0ae9ff;
+	font-size: 12px;
+	margin-left: 20px;
+}
+.monitor-chart-title1{
+	width: 160px;
+	height: 26px;
+	box-sizing: border-box;
+	border: 1px solid #01e6f9;
+	border-radius: 13px;
+	text-align: center;
+	font-size: 12px;
+	color: #00ffff;
+	margin: -10px auto 0;
+}
+.monitor-chart-title1>div{
+	width: 152px;
+	line-height: 18px;
+	background: rgba(6,148,162,0.6);
+	border-radius: 9px;
+	margin: 3px 0 0 3px;
+}
+.monitor-chart-body{
+	width: 100%;
+	height: calc(100% - 30px);
+}
+
+/*实有人口*/
+.monitor-total-people-wrap{
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	background-image: url("../../../static/image/layout/echarts-img/left-bottom-bg.png");
+}
+.echarts_monitor3_select_wrap{
+	width: 80px;
+	line-height: 20px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: #ffffff;
+    font-size: 12px;
+    cursor: pointer;
+    text-align: center;
+    background-image: url("../../../static/image/layout/echarts-img/total-person-select.png");
+}
+.echarts_monitor3_triangle{
+    display: inline-block;
+    border-width: 10px 7px 0 7px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: #0ae9ff;
+    margin: 0 5px;
+    transition: 1s;
+}
+
+.echarts_monitor3_select{
+    position: absolute;
+    z-index: 1;
+    right: -1px;
+    top: 24px;
+    width: 100%;
+    max-height: 80px;
+    overflow: auto;
+    background: rgba(12,54,57,0.6);
+    box-shadow: inset 0px 0px 5px rgba(22,246,254,0.6);
+    color: #0ae9ff;
+    text-align: center;
+    border-radius: 6px;
+}
+.echarts_monitor3_select_item:hover{
+    color: #fab91f;
+}
+
+/*安全态势*/
+.echarts_dashboard_wrap{
+    width: 356px;
+   background: url('../../../static/image/layout/echarts-img/security-state.png');
+}
+.echarts_dashboard_item{
+	line-height: 42px;
+	font-size: 12px;
+	color: #fff;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	box-sizing: border-box;
+	padding: 0 20px;
+}
+.echarts_dashboard_item span{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	line-height: 20px;
+	font-size: 14px;
+	color: #0ddff3;
+	border-radius: 3px;
+	text-align: center;
+	box-shadow: 0px 0px 4px 1px rgba(22,246,254,0.6) inset;
+	font-weight: bold;
+}
+.echarts_dashboard{
+    margin-bottom: 14px;
+   	height: calc(100% - 72px);
+}
+.norm{
+	width: 100%;
+	height: 150px;
+}
+
+/*综合管控模块*/
+.dispatch-chart{
+	width: 480px;
+	height: 200px;
+	background: url('../../../static/image/layout/echarts-img/dispatch-chart.png');
+}
+.dispatch-chart1{
+	width: 356px;
+	height: 180px;
+	background: url('../../../static/image/layout/echarts-img/dispatch-chart1.png');
+}
+.dispatch-chart-title{
+	font-size: 14px;
+	color: #0ae9ff;
+	line-height: 30px;
+	margin-left: 20px;
+}
+.dispatch-chart-body{
+	height: calc(100% - 30px);
+}

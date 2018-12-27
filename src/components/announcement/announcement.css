@@ -1,0 +1,96 @@
+/*
+ * 公告模块
+ */
+.announce{
+	width: 730px;
+	height: 554px;
+	background: url('../../../static/image/layout/chat/chat-bg.png');
+	box-sizing: border-box;
+	padding: 20px;
+	color: #0ae9ff;
+}
+.announce-close{
+	width: 26px;
+	height: 26px;
+	border-radius: 50%;
+	background: url('../../../static/image/layout/big-red-close.png');
+	position: absolute;
+	top: 8px;
+	right: 8px;
+	cursor: pointer;
+	z-index: 20;
+}
+.announce-list{
+	width: 280px;
+	height: 504px;
+}
+.announce-list-title{
+	width: 280px;
+	line-height: 48px;
+	background:  url('../../../static/image/layout/common/announce-list-title.png');
+	font-size: 16px;
+	color: #fff;
+	box-sizing: border-box;
+	padding-left: 20px;
+}
+.announce-items{
+	height: calc(100% - 58px);
+}
+.announce-item{
+	line-height: 40px;
+	font-size: 12px;
+	cursor: pointer;
+	box-sizing: border-box;
+	padding-left: 20px;
+	background: url('../../../static/image/layout/common/announce-list.png');
+}
+.announce-reddot{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: #ff380a;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.announce-graydot{
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	background: #b9c1c1;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.announce-detail{
+	width: 402px;
+	height: 100%;
+	background: url('../../../static/image/layout/common/anounce-detail.png');
+}
+.announce-detail-name{
+	line-height: 48px;
+	width: calc(100% - 20px);
+	margin: 0 auto;
+	border-bottom: 1px solid #115b61;
+	font-size: 14px;
+	text-align: center;
+}
+.announce-detail-content{
+	width: 100%;
+	height: calc(100% - 50px);
+	box-sizing: border-box;
+	padding: 10px;
+}
+.announce-detail-content p{
+	white-space: pre-wrap;
+}
+.announce-detail-content img{
+	max-width: 100%;
+}
+.announce-detail-content span{
+	color: #0ae9ff !important;
+}
+.announce-active{
+	color: #fcb90e;
+}
+.announce-detail-content{
+	font-size: 14px;
+}

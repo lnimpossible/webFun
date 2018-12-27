@@ -1,0 +1,118 @@
+/* 创建新任务 */
+.new-situation{
+    width: 430px;
+    height: 584px;
+    background: url('../../../static/image/layout/common/new-task-bg.png') no-repeat;
+    padding: 20px 0 0 30px;
+    color: #0ae9ff;
+    font-size: 12px;
+    position: relative;
+}
+.new-situation-title{
+    font-size: 14px;
+}
+.new-situation-content{
+    margin-top: 28px;
+}
+.new-situation-k{
+	display: inline-block;
+    width: 90px;
+    line-height: 24px;
+    text-align: center;
+    background-color: rgba(17, 57, 60, 0.8);
+    border-radius: 6px;
+    color: #fff;
+}
+.new-situation-content input{
+    width: 230px;
+    height: 24px;
+    background-color: rgba(17, 57, 60, 0.8);
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 12px;
+    padding-left: 8px;
+}
+.new-situation-type{
+	display: inline-block;
+	width: 230px;
+    height: 24px;
+    background-color: rgba(17, 57, 60, 0.8);
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 12px;
+    padding-left: 8px;
+    line-height: 24px;
+    cursor: pointer;
+}
+.new-situation-type-list{
+	width: 230px;
+	position: absolute;
+	top: 26px;
+	left: 102px;
+    display: none;
+    z-index: 10;
+}
+.situation-type{
+	background-color: rgba(17, 57, 60, 0.8);
+	box-sizing: border-box;
+	padding-left: 8px;
+	line-height: 20px;
+	cursor: pointer;
+}
+.situation-type:hover{
+	color: #fcb90e;
+}
+.rotate{
+	transform: rotateZ(180deg);
+}
+.new-situation-b{
+	display: inline-block;
+    width: 60px;
+    height: 24px;
+    background: rgba(17, 57, 60, 0.8) url('../../../static/image/layout/common/new-task-add.png') no-repeat center center;
+    vertical-align:middle;
+    margin-left: 8px;
+}
+.new-situation-b1{
+	display: inline-block;
+    width: 70px;
+    line-height: 70px;
+    text-align: center;
+    font-size: 20px;
+    vertical-align: top;
+    background: rgba(17, 57, 60, 0.8) ;
+    cursor: pointer;
+    background-position: cover;
+}
+.situation-picture-preview{
+	display: inline-block;
+    width: 70px;
+    height: 70px;
+    vertical-align: top;
+	background-position: center;
+	background-size: cover;
+	margin-left: 10px;
+}
+.new-situation-remark{
+    width: 222px;
+    height: 84px;
+    background-color: rgba(17, 57, 60, 0.8);
+    border-radius: 6px;
+    border:none;
+    color: #fff;
+    outline: none;
+    font-size: 12px;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.new-situation-ensure{
+    width: 400px;
+    background: url('../../../static/image/layout/common/new-task-ensure.png') no-repeat;
+    text-align: center;
+    line-height: 40px;
+    font-size: 16px;
+}
+

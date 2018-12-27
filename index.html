@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<title>商务区综合管控中心</title>
+	<link rel="stylesheet" type="text/css" href="src/css/main.css"/>
+	<link href="lib/plugin/pangu1.50/Widgets/widgets.css" rel="stylesheet" type="text/css" >
+	<script type="text/javascript" src="lib/plugin/pangu1.50/pangu.js" ></script>
+	<!--louis Tdve-->
+	<script type="text/javascript" src="lib/js/jquery3.3.1.js" ></script>
+	<script type="text/javascript" src="lib/js/jquery.cookie.js" ></script>
+	<script type="text/javascript" src="src/js/config.js" ></script>
+	<script type="text/javascript" src="src/js/constantData.js" ></script>
+	<script type="text/javascript" src="src/js/requestData.js" ></script>
+	
+	<script src="src/js/login/loginCache.js"></script>
+	<!--验证是否登录，所需必须引用文件提前 By louis-->
+	<script>TF.LoginCache.check();</script>
+	<script type="text/javascript" src="src/js/webSocket.js" ></script>
+</head>
+<body>
+	<div class="geo-scene-wrap">
+		<div class="geo-scene dimension2" id="dimension2"></div>
+		<div class="geo-scene dimension3" id="panguContainer"></div>
+	</div>
+	<div class="geo-scene-switch point-event-auto center-scale">
+		<div class="geo-scene-btn cursor-pointer">
+			<span class="geo-scene-name" c-title="切换地图">二维</span>
+			<i class="double-right fa fa-angle-double-right" aria-hidden="true"></i>
+		</div>
+	</div>
+	<div class="menu-master-wrap flex justify-between point-event-auto">
+		<div class="menu-master menu-master1 menu-master-active" c-title="智能监控"></div>
+		<div class="menu-master menu-master2 " c-title="综合管控"></div>
+		<div class="menu-master menu-master3" c-title="智能分析"></div>
+		<div class="menu-master menu-master4" c-title="专题分析"></div>
+		<!--<div class="menu-master menu-master5" c-title="关闭系统"></div>-->
+	</div>
+	<!--聊天-->
+	<div class="chat-box"></div>
+	<!--查看图片，视频-->
+	<div class="picture-video"></div>
+	<div class="module-wrap"></div>
+	<div id="scenePopup">
+		<video id="video1" autoplay="autoplay" loop="loop" src="./static/media/camera1.mp4" muted="muted"></video>
+		<!--<video id="video2" muted autoplay="autoplay" loop="loop" src="./static/media/camera2.mp4" ></video>-->
+	</div>
+	<script src="./src/js/main.js"></script>
+	<script src="https://webapi.amap.com/maps?v=1.4.8&key=6b4f7499227862bcfbf5a677139e08ec&plugin=AMap.Geocoder"></script>
+</body>
+</html>

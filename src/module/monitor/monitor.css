@@ -1,0 +1,130 @@
+/*
+ * 日常监控模块
+ * */
+.monitor{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	pointer-events: none;
+	background: url('../../../static/image/layout/monitor/monitor-total-bg.png');
+	background-size: 100% 100%;
+}
+
+.monitor-t{
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.aircraft{
+	text-align: center;
+	cursor: pointer;
+}
+
+
+/*情况预览*/
+.situation-preview{
+	width: 280px;
+    height: 152px;
+    position: absolute;
+    left: 40px;
+    top: 22%;
+    font-size: 12px;
+}
+
+/*聊天预览*/
+.chat-preview{
+	position: absolute;
+	left: 24px;
+	bottom: 26%;
+}
+
+.monitor-center{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background: rgba(0,0,0,0.3);
+	display: none;
+}
+.monitor-lb{
+	width: 640px;
+	height: 180px;
+	position: absolute;
+	left: 30px;
+	/*bottom: 20px;*/
+	bottom: 3%;
+	background-image: url("../../../static/image/layout/echarts-img/left-bottom-bg.png");
+}
+.monitor-rb{
+	width: 642px;
+	height: 180px;
+	position: absolute;
+	right: 30px;
+	/*bottom: 20px;*/
+	bottom: 3%;
+}
+/*.monitor-rb1{
+	width: 350px;
+	height: 100%;
+}*/
+.monitor-rb1{
+	width: 260px;
+	height: 180px;
+	background: url("../../../static/image/layout/echarts-img/situation-num-chart.png");
+	font-size: 12px;
+	color: #05e7fe;
+	font-family: SimHei;
+}
+.monitor-situation1{
+	width: 86px;
+	line-height: 74px;
+	text-align: center;
+	font-size: 24px;
+	color: #f6168d;
+	background: url("../../../static/image/layout/echarts-img/situation-num-chart1.png");
+}
+.monitor-situation2{
+	width: 86px;
+	line-height: 74px;
+	font-size: 24px;
+	color: #f4be16;
+	background: url("../../../static/image/layout/echarts-img/situation-num-chart1.png");
+	background-position: right;
+	
+}
+.monitor-situation-unit{
+	color: #fff;
+	font-size: 12px;
+}
+.monitor-situation-name{
+	font-size: 14px;
+	margin-top: 10px;
+	color: #05e7fe;
+}
+.monitor-rb2{
+	width: calc(100% - 260px);
+	height: 100%;
+	position: relative;
+}
+.monitor-r{
+	width: 230px;
+	height: 490px;
+	position: absolute;
+	right: 20px;
+	top: 180px;
+	/*transform: translateY(-50%);*/
+}
+/*.monitor-r1{
+	height: 170px;
+}*/
+.monitor-r1,.monitor-r2,.monitor-r3{
+	height: 170px;
+	margin-top: 10px;
+}
+/*.monitor-chart-title{
+	line-height: 30px;
+	margin-left: 20px;
+}*/
+

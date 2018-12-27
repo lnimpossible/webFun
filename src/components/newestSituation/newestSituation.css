@@ -1,0 +1,87 @@
+/* 
+ * 最新情况
+ *  */
+ .newest-situation{
+    width: 332px;
+    height: 290px;
+    background:none;
+    padding:20px 0 0 10px;
+    position: relative;
+    overflow: hidden;
+    color: #0bdef2;
+    font-size: 12px;
+}
+.level1{
+	width: 312px;
+	height: 86px;
+}
+.level2{
+	width: 312px;
+	height: 160px;
+}
+.newest-situation:hover{
+    width: 334px;
+    height: 292px;
+    background: url('../../../static/image/layout/common/bg-chat-more.png') no-repeat;
+}
+.newest-situation-more{
+    display: none;
+}
+.newest-situation:hover .newest-situation-more{
+    display: block;
+}
+.device-event-info{
+    height: 28px;
+    line-height: 28px;
+    width: fit-content;
+    background-color: rgba(26, 63, 67, 0.8);
+    padding: 0 20px;
+    border-radius: 30px;
+    margin: 10px 0;
+    cursor: pointer;
+    position: relative;
+}
+.device-event-info-active{
+	color: #fcb90e;
+}
+.device-event-info:hover{
+    color: #eee50b;
+}
+.device-event-info .fa-star{
+    font-size: 18px;
+    margin-right: 8px;
+}
+.yellow{
+    color: #fab553;
+}
+.red{
+    color: #fa5353;
+}
+.event-current{
+    color: #eee50b;
+}
+.device-event-line{
+    border:1px dashed #17686e;
+    width: 220px;
+    position: absolute;
+    bottom: 42px;
+    left: 10px;
+}
+.device-event-txt{
+    font-size: 15px;
+    position: absolute;
+    right: 46px;
+    bottom: 40px;
+    cursor: pointer;
+}
+.newest-situation-hr1{
+	border:1px dashed #2059a8;
+	width: 160px;
+	margin-left:10px;
+}
+.new-tag{
+	color: #F7484F;
+	top: -0.5em;
+    vertical-align: top;
+    position: relative;
+}

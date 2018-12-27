@@ -1,0 +1,124 @@
+<div class="special">
+	<div class="special-head">
+		<div class="special-menus-wrap">
+			<div class="special-menu-switch">
+				<div class="show-special-menu"></div>
+				<div class="hide-special-menu"></div>
+			</div>
+			<ul class="special-menus">
+				<li class="special-menu special-menu1" c-title-b="智能监控"></li>
+				<li class="special-menu special-menu2" c-title-b="综合管控"></li>
+				<li class="special-menu special-menu3" c-title-b="智能分析"></li>
+				<li class="special-menu special-menu4" c-title-b="专题分析"></li>
+			</ul>
+			<div class="decorator2">
+				<span class="decorator-gradient1"></span>
+				<span class="decorator-dot"></span>
+			</div>
+		</div>
+		<ul class="special-module">
+			<li class="special-module-tag1 special-module-tag">智能停车场</li>
+			<hr class="special-module-hr" />
+			<li class="special-module-tag2 special-module-tag">管线可视化</li>
+			<hr class="special-module-hr" />
+			<li class="special-module-tag3 special-module-tag">交通流量分析</li>
+		</ul>
+		<div class="special-head-r">
+			<div class="decorator2">
+				<span class="decorator-dot"></span>
+				<span class="decorator-gradient2"></span>
+			</div>
+			<div class="special-person-center"></div>
+		</div>
+	</div>
+	<div id="tdMapPark" style="width:100%;height:100%;pointer-events:all;background: rgb(22,42,123);"></div>
+	<ul class="m1-park-list">
+		<li class="m1-park-tag" c-title-r="三迪停车场">P<sub>1</sub></li>
+		<li class="m1-park-tag" c-title-r="万达停车场">P<sub>2</sub></li>
+		<li class="m1-park-tag" c-title-r="富悦停车场">P<sub>3</sub></li>
+		<li class="m1-park-tag" c-title-r="莱顿停车场">P<sub>4</sub></li>
+		<li class="m1-park-tag" c-title-r="五龙停车场">P<sub>5</sub></li>
+	</ul>
+	<ul class="m1-num">
+		<li class="m1-num-tag">
+			<ul class="park-glow-text park-used" style="color: #1687f3;"></ul>
+			<div class="m1-num-tag-name fr">
+				<p>已用车位</p>
+				<p class="analysis-g4-en">Used parking space</p>
+			</div>
+		</li>
+		<li class="m1-num-tag">
+			<ul class="park-glow-text park-unused" id="glow-text2" style="color: #25ebfd;"></ul>
+			<div class="m1-num-tag-name fr">
+				<p>剩余车位</p>
+				<p class="analysis-g4-en">Remaining position</p>
+			</div>
+		</li>
+		<li class="m1-num-tag">
+			<ul class="park-glow-text park-all" id="glow-text3" style="color: #fda925;"></ul>
+			<div class="m1-num-tag-name fr">
+				<p>总车位</p>
+				<p class="analysis-g4-en">Total parking space</p>
+			</div>
+		</li>
+	</ul>
+	<ul class="m1-chart-wrap">
+		<li class="m1-chart-box1 m1-chart-box">
+			<div class="m1-chart-title">今日总车流量统计(单位/百)</div>
+			<div class="m1-chart-body">
+				<div class="analysis-circle">
+					<img class="analysis-circle-img clockwise" src="./static/image/layout/dataAnalysis/live-norm1.png" />
+					<img class="analysis-circle-img anticlockwise" src="./static/image/layout/dataAnalysis/live-norm2.png" />
+					<img class="analysis-circle-img clockwise" src="./static/image/layout/dataAnalysis/live-norm3.png" />
+					<span class="analysis-circle-num analysis-circle-num1">85</span>
+					<p class="analysis-circle-name">总车流量</p>
+				</div>
+				<div class="analysis-circle">
+					<img class="analysis-circle-img clockwise" src="./static/image/layout/dataAnalysis/manage-norm1.png" />
+					<img class="analysis-circle-img anticlockwise" src="./static/image/layout/dataAnalysis/manage-norm2.png" />
+					<img class="analysis-circle-img clockwise"  src="./static/image/layout/dataAnalysis/manage-norm3.png"/>
+					<span class="analysis-circle-num analysis-circle-num2">85</span>
+					<p class="analysis-circle-name">驶入车辆</p>
+				</div>
+				<div class="analysis-circle">
+					<img class="analysis-circle-img clockwise" src="./static/image/layout/dataAnalysis/business-norm1.png" />
+					<img class="analysis-circle-img anticlockwise" src="./static/image/layout/dataAnalysis/business-norm2.png" />
+					<img class="analysis-circle-img clockwise" src="./static/image/layout/dataAnalysis/business-norm3.png" />
+					<span class="analysis-circle-num analysis-circle-num3">85</span>
+					<p class="analysis-circle-name">驶出车辆</p>
+				</div>
+			</div>
+		</li>
+		<li class="m1-chart-box2 m1-chart-box">
+			<div class="m1-chart-title">今日车流量统计对比(单位/百)</div>
+			<div class="m1-chart-body" id="park-contrast"></div>
+		</li>
+		<li class="m1-chart-box3 m1-chart-box">
+			<div class="m1-chart-title">今日车流量实时趋势(单位/百)</div>
+			<div class="m1-chart-body" id="park-trend"></div>
+		</li>
+		<li class="m1-chart-box4 m1-chart-box">
+			<div class="m1-chart-title">高低峰时间点统计</div>
+			<div class="m1-chart-box4-select"></div>
+			<div class="m1-chart-body1">
+				<div class="peak-time">
+					<p>10:00</p>
+					<p>08:00</p>
+					<p>13:00</p>
+				</div>
+				<div class="park-peak" id="park-peak"></div>
+				<div class="peak-time">
+					<p>10:00</p>
+					<p>08:00</p>
+					<p>13:00</p>
+				</div>
+			</div>
+			<div class="category">
+				<p class="category1">高峰时间点</p>
+				<p class="category2">低峰时间点</p>
+			</div>
+		</li>
+	</ul>
+</div>
+<script src="./src/module/special/action.js"></script>
+<script src="./src/module/special/effect.js"></script>

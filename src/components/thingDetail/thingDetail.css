@@ -1,0 +1,348 @@
+/*
+ * 设备，人员，情况，任务，预案详情
+ */
+
+/* 详情 */
+.thing-detail{
+	padding: 20px 0 0 30px;
+    position: relative;
+    color: #0ae9ff;
+    font-size: 12px;
+}
+.thing-detail-name{
+    font-size: 14px;
+}
+.thing-detail-body{
+	width: 100%;
+    overflow: hidden;
+    /*height: 200px;*/
+}
+.thing-detail-body>ul{
+	height: 100%;
+}
+.thing-detail-k,.thing-detail-v,
+.thing-detail-v1,.thing-detail-v2,.thing-detail-v3{
+	color: #fdfdfe;
+    font-size: 12px;
+    line-height: 22px;
+	display: inline-block;
+	background-color:rgba(12,54,57,0.8);
+    border-radius: 4px;
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+.thing-detail-k{
+	width: 80px;
+    min-height: 24px;
+}
+.thing-detail-v{
+	width: 166px;
+    min-height: 24px;
+    margin-left: 8px;
+    vertical-align: top;
+}
+.thing-detail-picture{
+	width: 60px;
+	height: 60px;
+	border-radius: 4px;
+	vertical-align: top;
+	display: inline-block;
+	background-position: center;
+	background-size: cover;
+}
+.thing-detail-related1{
+	width: 100%;
+	box-sizing: border-box;
+    padding: 0 126px;
+    font-size: 12px;
+}
+.thing-detail-related1 li{
+    cursor: pointer;
+}
+.thing-detail-related2{
+	margin-right: 30px;
+}
+.malfunction{
+    color: #fc572b;
+}
+.malfunction div{
+    background: #fc572b;
+    box-shadow: 0 0 0 1px #fc572b;
+}
+.normal{
+    color: #0ae935;
+}
+.normal div{
+    background: #0aff2d;
+    box-shadow: 0 0 0 1px #0aff2d;
+}
+
+/*摄像头详情*/
+.camera-details{
+	width: 650px;
+	height: 394px;
+	background: url('../../../static/image/layout/common/camera-detail-bg.png');
+}
+.camera-video{
+	float:right;
+    width: 320px;
+    height: 180px;
+    margin-right: 30px;
+    position: relative;
+}
+.full-screen{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+
+/* 广播详情 */
+.broadcast-details{
+	width: 650px;
+	height: 394px;
+	background: url('../../../static/image/layout/common/camera-detail-bg.png');
+}
+.broadcast-control{
+    width: 288px;
+    background: url('../../../static/image/layout/common/broadcast-detail-report.png') no-repeat;
+    float:right;
+    margin-right: 30px;
+    font-size: 12px;
+}
+.broadcast-illustrate{
+	text-align: center;
+	line-height: 150px;
+}
+.broadcast-voice{
+    width: 280px;
+    line-height: 28px;
+    text-align: center;
+    background: url('../../../static/image/layout/common/broadcast-detail-voice.png') no-repeat;
+    margin-top: 16px;
+}
+.broadcast-control-group{
+    margin-top: 14px;
+    display: flex;
+    justify-content:space-between;
+}
+.broadcast-control-btn{
+    width: 78px;
+    height: 28px;
+    line-height: 26px;
+    background: url('../../../static/image/layout/common/broadcast-detail-text.png') no-repeat;
+    padding: 0px 17px;
+    box-sizing: border-box;
+}
+
+/*消防栓详情*/
+.hydrant-details{
+	width: 430px;
+    height: 304px;
+    background: url('../../../static/image/layout/common/selected-camera-bg.png') no-repeat;
+}
+.hydrant-details-right-item{
+	text-align: center;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+
+
+.water-pressure-details{
+	width: 430px;
+    height: 304px;
+    background: url('../../../static/image/layout/common/selected-camera-bg.png')
+}
+.water-pressure-details-right-item{
+	text-align: center;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+
+.pm25-details{
+	width: 430px;
+    height: 304px;
+    background: url('../../../static/image/layout/common/selected-camera-bg.png')
+}
+.pm25-details-right-item{
+	text-align: center;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+
+/*人员详情*/
+.person-detail-avatar{
+	width: 100%;
+	height: 100%;
+	background-position: center;
+	background-size: cover;
+	border-radius: 50%;
+}
+.person-detail{
+	width: 430px;
+    height: 304px;
+    background: url('../../../static/image/layout/common/selected-camera-bg.png') no-repeat;
+}
+.person-detail-avatar-wrap{
+	width: 44px;
+	height: 44px;
+	box-sizing: border-box;
+	padding: 10px;
+	background: url('../../../static/image/layout/avatar-bg.png');
+}
+
+.person-details-right-item{
+	text-align: center;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+
+
+/*情况详情*/
+.situation-details{
+	width: 430px;
+    height: 404px;
+    background: url('../../../static/image/layout/common/situation-detail-bg.png') no-repeat;
+}
+.situation-detail-body{
+	height: 320px;
+}
+.situation-details-right-item{
+	text-align: center;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+.audio-play{
+	width: 60px;
+	cursor: pointer;
+}
+.audo-play-img{
+	display: none;
+}
+.audio-time{
+	color: #fff;
+	margin-left: 10px;
+}
+
+/*任务详情*/
+.task-details{
+	width: 430px;
+    height: 404px;
+    background: url('../../../static/image/layout/common/situation-detail-bg.png') no-repeat;
+}
+.task-detail-body{
+	height: 330px;
+}
+.task-details-right-item{
+	text-align: center;
+	margin-bottom: 30px;
+	cursor: pointer;
+}
+.task-details-handle{
+	text-align: center;
+	cursor: pointer;
+}
+
+/*建筑详情*/
+.building-details{
+	width: 650px;
+	height: 394px;
+	background: url('../../../static/image/layout/common/camera-detail-bg.png');
+}
+.building-detail-body{
+	height: 315px;
+}
+.building-detail-body>ul{
+	height: 100%;
+}
+.building-details-r{
+	width: 303px;
+	height: 311px;
+	background: url('../../../static/image/layout/common/building-details-r-bg.png');
+}
+.floor-box{
+	height: calc(100% - 90px);
+}
+.floor-unit-tag{
+	margin: 10px 20px 20px;
+	line-height: 24px;
+	box-sizing: border-box;
+	padding-left: 17px;
+	background: url('../../../static/image/layout/common/building-details-tag-bg.png');
+}
+/*.line{
+	display: inline-block;
+	width: calc(100% - 103px);
+	border-bottom: 1px solid #115a5e;
+}*/
+.floor-wrap{
+	/*width: 100%;*/
+	/*height: 170px;*/
+	margin-left: 20px;
+}
+.floor{
+	display: inline-block;
+	width: 56px;
+	line-height: 20px;
+	border-radius: 10px;
+	background: #092729;
+	margin: 0 10px 10px 0;
+	text-align: center;
+	cursor: pointer;
+}
+.floor-active{
+	color: #f7f4ed;
+	background: #fcb90e;
+}
+.building-details-btns{
+	box-sizing: border-box;
+	padding: 0 20px;
+	margin-top: 30px;
+	overflow: hidden;
+}
+.building-details-btn{
+	/*margin: 30px auto 0;*/
+	/*width: 263px;*/
+	width: 130px;
+	line-height: 36px;
+	text-align: center;
+	background: url('../../../static/image/layout/common/building-details-btn.png');
+	cursor: pointer;
+}
+
+/*预案详情*/
+.plan-details{
+	width: 520px;
+    height: 504px;
+    background: url('../../../static/image/layout/common/plan-detail-bg.png') no-repeat;
+}
+.plan-detail-body{
+	height: 430px;
+}
+.plan-detail-list{
+	width: 410px;
+}
+.thing-detail-v1{
+	width: 300px;
+	min-height: 24px;
+    margin-left: 8px;
+    vertical-align: top;
+}
+.thing-detail-v2{
+	width: 100px;
+	min-height: 24px;
+    margin-left: 8px;
+    vertical-align: top;
+}
+.thing-detail-v3{
+	width: 190px;
+	min-height: 24px;
+    margin-left: 8px;
+    vertical-align: top;
+}
+
+/*房间详情*/
+.room-detail{
+	width: 320px;
+	height: 384px;
+	background: url('../../../static/image/layout/common/room-about-bg.png') no-repeat;;
+}

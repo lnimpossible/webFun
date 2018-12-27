@@ -1,0 +1,1119 @@
+/*地理信息场景控制*/
+.menu-control-wrap{
+	position: absolute;
+	top: 26px;
+	right: 145px;
+	width: 240px;
+	height: 20px;
+}
+.menu-control{
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+.menu-control1{
+	background-image: url(../../../static/image/layout/monitor/bg-menu-control1.png);
+}
+.menu-control2{
+	background-image: url(../../../static/image/layout/monitor/bg-menu-control2.png);
+}
+.menu-control3{
+	background-image: url(../../../static/image/layout/monitor/bg-menu-control3.png);
+}
+.menu-control4{
+	background-image: url(../../../static/image/layout/monitor/bg-menu-control4.png);
+}
+.menu-control-active{
+	background-position: bottom center;
+}
+
+.menu-control-extend{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 50px;
+	width: 280px;
+	height: 100px;
+	font-size: 12px;
+	color: #20cefc;
+	display: none;
+}
+.menu-control-extend1{
+	height: 32px;
+	background: url(../../../static/image/layout/monitor/bg-menu-control-extend1.png);
+	text-align: center;
+}
+.menu-control-extend2{
+	overflow: hidden;
+	background: url(../../../static/image/layout/monitor/bg-menu-control-extend2.png);
+}
+.menu-control-extend3{
+	height: 32px;
+	box-sizing: border-box;
+	padding-top: 13px;
+	text-align: center;
+	background: url(../../../static/image/layout/monitor/bg-menu-control-extend3.png);
+}
+.menu-control-item{
+	width: calc(50% - 20px);
+	height: 16px;
+	box-sizing: border-box;
+	padding-left: 46px;
+	margin: 10px 0 10px 20px;
+	cursor: pointer;
+}
+.menu-control-camera{
+	background: url('../../../static/image/layout/monitor/menu-control-camera-bg.png') no-repeat;
+}
+.menu-control-broadcast{
+	background: url('../../../static/image/layout/monitor/menu-control-broadcast-bg.png') no-repeat;
+}
+.menu-control-wifi{
+	background: url('../../../static/image/layout/monitor/menu-control-wifi-bg.png') no-repeat;
+}
+.menu-control-person{
+	background: url('../../../static/image/layout/monitor/menu-control-person-bg.png') no-repeat;
+}
+.box-select{
+	background: url('../../../static/image/layout/monitor/box-select.png') no-repeat;
+}
+.line-select{
+	background: url('../../../static/image/layout/monitor/line-select.png') no-repeat;
+}
+.clean-select{
+	cursor: pointer;
+}
+
+/*个人中心*/
+.personal-info{
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	width: 80px;
+	height: 80px;
+}
+.menu-personal{
+	position: relative;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 90px;
+}
+.personal-motion{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+/*右上角聊天消息打开按钮*/
+.monitor-rt{
+	position: absolute;
+	right: 30px;
+	top: 112px;
+}
+.open-chat-btn{
+	width: 56px;
+	height: 56px;
+	line-height: 66px;
+    text-align: center;
+    cursor: pointer;
+}
+.open-chat-motion{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+/* 设备事件 */
+.device-event-list{
+    width: 332px;
+    height: 290px;
+    background:none;
+    padding:20px 0 0 10px;
+    position: relative;
+    overflow: hidden;
+}
+.device-event-more{
+    display: none;
+}
+/* 显示更多 */
+.device-event-list:hover{
+    width: 332px;
+    height: 290px;
+    background: url('../../../static/image/layout/common/bg-chat-more.png') no-repeat;
+}
+.device-event-list:hover .device-event-more{
+    display: block;
+}
+.device-event-info{
+    height: 28px;
+    line-height: 28px;
+    width: fit-content;
+    background-color: #0d235a;
+    color: #00f3ff;
+    padding: 2px 20px;
+    border-radius: 30px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.device-event-info .fa-star{
+    font-size: 18px;
+    /* color: #fa5353; */
+    margin-right: 8px;
+}
+.yellow{
+    color: #fab553;
+}
+.red{
+    color: #fa5353;
+}
+.event-current{
+    color: #eee50b;
+}
+.device-event-line{
+    border:1px dashed #122d73;
+    width: 220px;
+    position: absolute;
+    bottom: 42px;
+    left: 10px;
+}
+.device-event-txt{
+    font-size: 15px;
+    position: absolute;
+    right: 46px;
+    bottom: 40px;
+    cursor: pointer;
+}
+
+/* 人员事件 */
+.person-event-info{
+    padding-left: 60px;
+    padding-top: 36px;
+    width: 247px;
+    height: 102px;
+    background: url('../../../static/image/layout/common/bg-chat-profile.png') no-repeat;
+    color: #fff200;
+    font-size: 14px;
+    word-break:break-all;
+    position: relative;
+    margin-bottom:-30px;
+}
+.person-event-info p{
+    width: 170px;
+}
+
+.person-event-photo{
+    position: absolute;
+    left: 8px;
+    top: 8px;
+}
+
+/*摄像头画面和控制*/
+.camera-screen-wrap{
+	width: 100%;
+	height: 100%;
+	color: #27aae1;
+}
+.camera-screen-t{
+	width: 100%;
+	line-height: 24px;
+	background: url('../../../static/image/layout/common/common-camera-screen1.png') no-repeat;
+	text-align: center;
+	color: #27aae1;
+	font-size: 12px;
+}
+.camera-screen{
+	width: 380px;
+	height: 120px;
+}
+.camera-screen-b{
+	width: 100%;
+	line-height: 24px;
+	background: url('../../../static/image/layout/common/common-camera-screen2.png');
+}
+
+
+/* 图层选择 */
+.layer-choose{
+    width: 260px;
+    height: 130px;
+    background: url('../../../static/image/layout/common/layer-choose-bg2.png') no-repeat;
+    position: relative;
+}
+.layer-txt{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #20cefc;
+    font-size: 13px;
+}
+.layer-choose-content{
+    height: 100%;
+    position: relative;
+}
+
+.layer-choose-camera{
+    position: absolute;
+    left: 36%;
+    top: 45%;
+}
+.layer-choose-personnel{
+    position: absolute;
+    left: 57%;
+    top: 45%;
+}
+.layer-choose-button{
+    margin-left: 18%;
+    position: relative;
+    top: -22%;
+}
+.layer-choose-ensure{
+    margin-left: -12%;
+    cursor: pointer;
+}
+.layer-choose-cancel{
+    margin-left: 24%;
+    cursor: pointer;
+}
+.ensure-txt{
+    position: absolute;
+    left: 1px;
+    top: 2px;
+    color: #20cefc;
+    font-size: 13px;
+    cursor: pointer;
+}
+.cancel-txt{
+    position: absolute;
+    right: 23%;
+    top: 2px;
+    color: #20cefc;
+    font-size: 13px;
+    cursor: pointer;
+}
+
+/* 广播播报 */
+.radio-broadcast{
+    /* width: 218px;
+    height: 108px; */
+    width: 288px;
+    height: 148px;
+    background: url('../../../static/image/layout/common/broadcast-detail-report.png') no-repeat;
+    float:right;
+    margin-top: 42px;
+    margin-right: 62px;
+}
+.radio-broadcast-left{
+    margin-left: 18%;
+    margin-top: 16%;
+}
+.radio-broadcast-voice{
+    width: 108px;
+    height: 28px;
+    line-height: 26px;
+    background: url('../../../static/image/layout/common/broadcast-detail-voice.png') no-repeat;
+    margin-top: 16%;
+    float: left;
+}
+.radio-broadcast-voice span,
+.radio-broadcast-text span{
+    color: #20cefc;
+    font-size: 13px;
+    margin-left: 36%;
+}
+
+.radio-broadcast-text{
+    width: 108px;
+    height: 28px;
+    line-height: 26px;
+    background: url('../../../static/image/layout/common/broadcast-detail-text.png') no-repeat;
+    margin-top: 16%;
+    float: right;
+}
+
+/* 新建任务 */
+/* .new-task-list{
+    width: 312px;
+    height: 484px;
+    background: url('../../../static/image/layout/common/new-task-bg.png') no-repeat;
+}
+.new-task-list p{
+    margin: 10px;
+}
+.new-task-title{
+    color: #20cefc;
+    font-size: 16px;
+    padding-left: 6%;
+    padding-top: 4px;
+}
+.new-task-close{
+    margin-left:68%;
+    margin-top: -6px;
+}
+.new-task-name{
+    color: #20cefc;
+    font-size: 14px;
+    padding-left: 6%;
+}
+.task-name-txt{
+    width: 252px;
+    height: 28px;
+    margin-left: 6%;
+    background-color: #09114e;
+    border-width:0px;
+    color: #fff;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+.new-task-personnel{
+    color: #20cefc;
+    font-size: 14px;
+    padding-left: 6%;
+}
+.task-personnel-txt,
+.task-position-txt{
+    width: 210px;
+    height: 28px;
+    margin-left: 6%;
+    background-color: #09114e;
+    border-width:0px;
+    color: #fff;
+    border-radius: 5px;
+    padding-left: 20px;
+}
+.new-task-add,
+.new-task-position{
+    vertical-align: middle;
+}
+.new-task-location,
+.new-task-remark{
+    color: #20cefc;
+    font-size: 14px;
+    padding-left: 6%;
+}
+.task-remark-txt{
+    width: 268px;
+    height: 88px;
+    margin-left: 6%;
+    background-color: #09114e;
+    border-width:0px;
+    color: #fff;
+    border-radius: 5px;
+    text-indent: 2em;
+}
+.new-task-ensure{
+    width: 272px;
+    height: 48px;
+    background: url('../../../static/image/layout/common/new-task-ensure.png') no-repeat;
+    margin-top: 2%;
+    margin-left: 6%;
+    color: #20cefc;
+    font-size: 18px;
+    text-align: center;
+    line-height: 48px;
+}
+.new-task-new{
+    width: 88px;
+    height: 36px;
+    background: url('../../../static/image/layout/common/new-task-new.png') no-repeat;
+    float: left;
+    margin-top: 1%;
+    text-align: center;
+    line-height: 36px;
+    cursor: pointer;
+}
+.new-task-new span{
+    color: #20cefc;
+}
+.new-task-more{
+    width: 222px;
+    height: 36px;
+    background: url('../../../static/image/layout/common/new-task-more.png') no-repeat;
+    float: left;
+    margin-top: 1%;
+    margin-left: 2px;
+    text-align: center;
+    line-height: 36px;
+    cursor: pointer;
+}
+.new-task-more span,
+.new-task-more i{
+    color: #20cefc;
+} */
+/* 摄像头详情 */
+.camera-details{
+    width: 680px;
+    height: 414px;
+    background: url('../../../static/image/layout/common/camera-detail-bg.png') no-repeat;
+    padding-top: 15px;
+    padding-left: 35px;
+    position: relative;
+}
+.camera-details .camera-name{
+    color: #20cefc;
+    font-size: 16px;
+}
+.camera-close{
+    position: absolute;
+    top: 30px;
+    right: 62px;
+    cursor: pointer;
+    color: #dd3131;
+    padding: 5px 16px;
+    background-color: rgba(6,5,41,0.5);
+    border-radius: 16px;
+    font-size: 14px;
+}
+.camera-close img{
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 8px;
+}
+.camera-details .camera-status{
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-left: 8px;
+}
+.camera-txt{
+    overflow: hidden;
+}
+.camera-txt ul{
+    margin-top: 40px;
+    float: left;
+}
+.camera-txt ul li{
+    margin-bottom: 10px;
+}
+.camera-txt ul span:first-child{
+    width: 80px;
+    height: 24px;
+}
+.camera-txt ul span:last-child{
+    width: 166px;
+    height: 24px;
+    margin-left: 8px;
+}
+.camera-txt ul span{
+    display: inline-block;
+    color: #fdfdfe;
+    font-size: 12px;
+    line-height: 22px;
+    padding-left: 15px;
+    background-color:rgba(12,24,97,0.3);
+    border-radius: 7px;
+}
+
+.camera-txt .camera-video{
+    float:right;
+    width: 320px;
+    height: 180px;
+    background-color: yellowgreen;
+    margin-top: 42px;
+    margin-right: 62px;
+    position: relative;
+}
+.camera-txt .full-screen{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.camera-bottom{
+    margin-top: 58px;
+}
+.camera-bottom ul{
+    margin-left: 80px;
+    overflow: hidden;
+}
+.camera-bottom li{
+    float: left;
+    color: #1fc2f1;
+    font-size: 12px;
+    margin-right: 75px;
+    cursor: pointer;
+}
+.camera-bottom li img{
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+
+/* 广播详情 */
+.broadcast-details{
+    width: 680px;
+    height: 414px;
+    background: url('../../../static/image/layout/common/camera-detail-bg.png') no-repeat;
+    padding-top: 15px;
+    padding-left: 35px;
+    position: relative;
+}
+.broadcast-details .broadcast-name{
+    color: #20cefc;
+    font-size: 16px;
+}
+.broadcast-close{
+    position: absolute;
+    top: 30px;
+    right: 62px;
+    cursor: pointer;
+    color: #dd3131;
+    padding: 5px 16px;
+    background-color: rgba(6,5,41,0.5);
+    border-radius: 16px;
+    font-size: 14px;
+}
+.broadcast-close img{
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 8px;
+}
+.broadcast-details .broadcast-status{
+    vertical-align: middle;
+    margin-top: -3px;
+    margin-left: 8px;
+}
+.broadcast-txt{
+    overflow: hidden;
+}
+.broadcast-txt ul{
+    margin-top: 40px;
+    float: left;
+}
+.broadcast-txt ul li{
+    margin-bottom: 10px;
+}
+.broadcast-txt ul span:first-child{
+    width: 80px;
+    height: 24px;
+}
+.broadcast-txt ul span:last-child{
+    width: 166px;
+    height: 24px;
+}
+.broadcast-txt ul span{
+    display: inline-block;
+    color: #fdfdfe;
+    font-size: 12px;
+    line-height: 22px;
+    padding-left: 15px;
+    /* padding: 6px 15px; */
+    background-color:rgba(9,18,79,0.3);
+    border-radius: 7px;
+}
+
+.broadcast-txt .broadcast-video{
+    float:right;
+    width: 320px;
+    height: 180px;
+    background-color: yellowgreen;
+    margin-top: 42px;
+    margin-right: 62px;
+    position: relative;
+}
+.broadcast-txt .full-screen{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+.broadcast-bottom{
+    margin-top: 18px;
+}
+.broadcast-bottom ul{
+    margin-left: 80px;
+    overflow: hidden;
+}
+.broadcast-bottom li{
+    float: left;
+    color: #1fc2f1;
+    font-size: 12px;
+    margin-right: 75px;
+    cursor: pointer;
+}
+.broadcast-bottom li img{
+    vertical-align: middle;
+    padding-right: 10px;
+}
+
+
+/* 创建新任务 */
+.new-task{
+    width: 460px;
+    height: 364px;
+    background: url('../../../static/image/layout/common/new-task-bg.png') no-repeat;
+    padding: 16px 28px;
+    color: #fff;
+    font-size: 12px;
+    position: relative;
+}
+.new-task-title{
+    color: #20cefc;
+    font-size: 14px;
+}
+.new-task-content ul{
+    margin-top: 28px;
+}
+.new-task-content ul li{
+    margin-top: 10px;
+}
+.new-task-content ul span{
+    display: inline-block;
+    width: 90px;
+    height: 24px;
+    text-align: center;
+    line-height: 24px;
+    background-color: rgba(23,29,85,0.5);
+    border-radius: 6px;
+    margin-right: 8px;
+    box-sizing: border-box;
+}
+
+.new-task-content .new-task-add{
+    display: inline-block;
+    width: 60px;
+    height: 24px;
+    background: rgba(23,29,85,0.5) url('../../../static/image/layout/common/new-task-add.png') no-repeat center center;
+    vertical-align:middle;
+    margin-left: 8px;
+}
+.new-task-content .new-task-position{
+    display: inline-block;
+    width: 60px;
+    height: 24px;
+    background: rgba(23,29,85,0.5) url('../../../static/image/layout/common/new-task-position.png') no-repeat center center;
+    vertical-align:middle;
+    margin-left: 8px;
+}
+
+
+.new-task-content ul input{
+    width: 230px;
+    height: 24px;
+    background-color: rgba(23,29,85,0.5);
+    border-width:0px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    color: #fff;
+    font-size: 12px;
+    outline:none;
+    padding-left: 8px;
+}
+
+.new-task-content .task-remark-txt{
+    width: 230px;
+    height: 84px;
+    background-color: rgba(23,29,85,0.5);
+    border-radius: 6px;
+    border-width:0px;
+    outline:none;
+    color: #fff;
+    font-size: 12px;
+    padding-left: 8px;
+    vertical-align: top;
+    box-sizing: border-box;
+}
+.new-task-ensure{
+    width: 400px;
+    height: 40px;
+    background: url('../../../static/image/layout/common/new-task-ensure.png') no-repeat;
+    margin-top: 30px;
+}
+.new-task-ensure p{
+    text-align: center;
+    line-height: 40px;
+    color: #20cefc;
+    font-size: 16px;
+}
+
+.new-task-close{
+    position: absolute;
+    top: 30px;
+    right: 80px;
+    cursor: pointer;
+    color: #dd3131;
+    padding: 5px 16px;
+    background-color: rgba(6,5,41,0.5);
+    border-radius: 16px;
+    font-size: 12px;
+}
+.new-task-close img{
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 8px;
+}
+
+/*
+ * 聊天列表
+ * */
+/*.chat-list-wrap{
+	width: 312px;
+	height: 420px;
+	background: url('../../../static/image/layout/common/chat-list-bg.png');
+	box-sizing: border-box;
+	padding-top: 6px;
+}
+.chart-list-search{
+	width: 182px;
+	height: 24px;
+	background: url('../../../static/image/layout/common/char-list-search-bg.png');
+	margin: 0 auto;
+	position: relative;
+}
+.chart-list-search-input{
+	width: 100%;
+	height: 100%;
+	background: none;
+	outline: none;
+	border: none;
+	font-size: 12px;
+	color: #20cefc;
+}
+.chart-search-input-cover{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	font-size: 12px;
+	color: #20cefc;
+}
+.chat-list{
+	width: 272px;
+	height: calc(100% - 78px);
+	margin: 48px auto 0;
+}
+.chat-list-item{
+	width: 100%;
+	height: 36px;
+	margin-bottom: 30px;
+	font-size: 12px;
+	color: #157fc7;
+	cursor: pointer;
+}
+.chat-list-item-l{
+	width: 36px;
+	height: 36px;
+	border-radius: 50%;
+	box-sizing: border-box;
+	padding: 6px;
+	background: url('../../../static/image/layout/common/chat-list-avatar-bg.png');
+}
+.chat-list-item-avatar{
+	width: 100%;
+	height: 100%;
+	border-radius: 50%;
+	background: url('../../../static/image/layout/avatar.jpg');
+	background-size: cover;
+	background-position: center;
+}
+.chat-list-item-m{
+	width: 164px;
+}
+.chat-list-item-name{
+	font-size: 16px;
+	color: #0ae9ff;
+}
+.chat-list-item-r{
+	width: 30px;
+}
+.chat-list-item-msgnum{
+	width: 28px;
+	height: 18px;
+	background: #fa5353;
+	border-radius: 10px;
+	color: #fff;
+	text-align: center;
+}*/
+
+
+
+
+
+/* 已选监控摄像头 */
+ul,li{ padding:0;margin:0;list-style:none}
+p{
+    margin: 0;
+    padding: 0;
+}
+.selected-camera{
+    width: 460px;
+    height: 324px;
+    background: url('../../../static/image/layout/common/selected-camera-bg.png') no-repeat;
+    padding: 16px 28px;
+    position: relative;
+}
+.close-btn{
+    position: absolute;
+    top: 30px;
+    right: 86px;
+    cursor: pointer;
+    color: #dd3131;
+    padding: 5px 16px;
+    background-color: rgba(6,5,41,0.5);
+    border-radius: 16px;
+    font-size: 12px;
+}
+.close-btn img{
+    vertical-align: middle;
+    margin-top: -2px;
+    margin-right: 6px;
+}
+.selected-camera-title{
+    color: #20cefc;
+    font-size: 14px;
+}
+.selected-camera-content{
+    overflow: hidden;
+}
+.selected-camera-content .selected-camera-right{
+    float: right;
+}
+.selected-camera-content ul{
+    margin-top: 22px;
+    float: left;
+}
+.selected-camera-content li{
+    margin-top: 10px;
+}
+.selected-camera-content ul span{
+    display: inline-block;
+    font-size: 12px;
+    background-color:rgba(12,24,97,0.3);
+    border-radius: 7px;
+    line-height: 24px;
+    text-align: center;
+}
+.selected-camera-content ul span:first-child{
+    width: 180px;
+    height: 24px;
+    color: #fff;
+    
+}
+.selected-camera-content ul span:last-child{
+    width: 88px;
+    height: 24px;
+    color: #0ae935;
+    margin-left: 8px;
+}
+.selected-camera-right{
+    margin-right: 68px;
+    margin-top: 60px;
+}
+.selected-camera-camera img,
+.selected-camera-task img{
+    display: block;
+    margin: 0 auto;
+}
+.selected-camera-camera p,
+.selected-camera-task p{
+    font-size: 12px;
+    color: #1ea1ce;
+    margin-top: 10px;
+}
+.selected-camera-task{
+    margin-top: 30px;
+}
+
+/* 查看监控画面 */
+.check-camera{
+    width: 460px;
+    height: 304px;
+    background: url('../../../static/image/layout/common/check-monitor-bg.png') no-repeat;
+    padding: 16px 28px;
+    position: relative;
+}
+.check-camera-title{
+    color: #20cefc;
+    font-size: 14px;
+}
+.check-camera-content{
+    overflow: hidden;
+}
+.check-camera-content .selected-camera-right{
+    float: right;
+}
+.check-camera-content ul{
+    margin-top: 22px;
+    float: left;
+}
+.check-camera-content li{
+    margin-top: 10px;
+}
+.check-camera-content ul span{
+    display: inline-block;
+    font-size: 12px;
+    background-color:rgba(12,24,97,0.3);
+    border-radius: 7px;
+    line-height: 24px;
+}
+.check-camera-content ul span:first-child{
+    width: 180px;
+    height: 24px;
+    color: #fff;
+    padding-left: 15px;
+}
+.check-camera-content ul span:last-child{
+    width: 88px;
+    height: 24px;
+    /* color: #0ae935; */
+    margin-left: 8px;
+    text-align: center;
+}
+.check-camera-right{
+    float: right;
+    margin-right: 68px;
+    margin-top: 60px;
+}
+
+.check-camera-camera{
+    width: 40px;
+    height: 40px;
+    background: url('../../../static/image/layout/common/check-camera-icon3.png') no-repeat;
+    cursor: pointer;
+}
+.check-camera-camera.current{
+    background: url('../../../static/image/layout/common/check-camera-icon1.png') no-repeat;
+}
+.check-camera-task{
+    width: 40px;
+    height: 40px;
+    background: url('../../../static/image/layout/common/check-camera-icon2.png') no-repeat;
+}
+
+.check-camera-task{
+    margin-top: 30px;
+}
+.check-camera-bottom{
+    float: right;
+    color: #20cefc;
+    font-size: 13px;
+    margin-right: 60px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+.check-camera-status{
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%;
+    border: 2px solid #182e76;
+    transform: translate(0, -6px);
+    position: relative;
+    top: 5px;
+}
+.normal{
+    color: #0ae935;
+}
+.normal div{
+    background: #0aff2d;
+    box-shadow: 0 0 0 1px #0aff2d;
+}
+.malfunction{
+    color: #fc572b;
+}
+.malfunction div{
+    background: #fc572b;
+    box-shadow: 0 0 0 1px #fc572b;
+}
+
+
+/* 已选人员 */
+.arrows-blue{
+    color: #47c7f4;
+}
+.arrows-yellow{
+    color: #fff200;
+}
+.selected-person{
+    width: 460px;
+    height: 464px;
+    background: url('../../../static/image/layout/common/selected-person-bg.png') no-repeat;
+    padding: 16px 26px;
+    position: relative;
+}
+.selected-person-main{
+    height: 320px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+    margin-top: 20px;
+}
+.selected-person-main::-webkit-scrollbar {
+    display: none;
+}
+.selected-person-title{
+    color: #20cefc;
+    font-size: 14px;
+    /* margin-bottom: 40px; */
+}
+.selected-person-content{
+    margin-top: 20px;
+    overflow: hidden;
+}
+.selected-person-department{
+    display: inline-block;
+    width: 370px;
+    height: 24px;
+    background: url('../../../static/image/layout/common/selected-person-department.png') no-repeat;
+    line-height: 24px;
+    color: #20cefc;
+    font-size: 12px;
+    padding-left: 22px;
+}
+.selected-person-content ul{
+    padding: 10px 30px;
+    display: none;
+}
+.selected-person-content ul li{
+    float: left;
+    width: 60px;
+    height: 24px;
+    background-color: rgba(28,29,89,0.5);
+    margin-right: 10px;
+    border-radius: 6px;
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    line-height: 24px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+.selected-person-content .active{
+    background-color: #20cefc;
+}
+.selected-person-content i{
+    cursor: pointer;
+}
+.selected-person-bottom{
+    position: absolute;
+    bottom: 58px;
+    left: 15px;
+}
+.selected-person-bottom li{
+    display: inline-block;
+    text-align: center;
+    line-height: 40px;
+    color: #20cefc;
+    font-size: 13px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.selected-person-bottom .active{
+    color: #fff200;
+}
+.selected-person-bottom .selected-person-voice,
+.selected-person-bottom .selected-person-video{
+    width: 80px;
+    height: 40px;
+    background: url('../../../static/image/layout/common/selected-person-voice.png') no-repeat;
+    
+}
+.selected-person-bottom .selected-person-group{
+    width: 220px;
+    height: 40px;
+    background: url('../../../static/image/layout/common/selected-person-group.png') no-repeat;
+}

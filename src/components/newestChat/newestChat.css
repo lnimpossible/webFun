@@ -1,0 +1,31 @@
+/* 最新聊天 */
+.newest-chat{
+	padding: 20px 0 0 60px;
+    box-sizing: border-box;
+    width: 247px;
+    height: 102px;
+    background: url('../../../static/image/layout/common/bg-chat-profile.png') no-repeat;
+    color: #fff200;
+    font-size: 14px;
+    word-break:break-all;
+    position: relative;
+    cursor: pointer;
+}
+.person-event-info p{
+    width: 170px;
+}
+
+.newest-chat-photo{
+    position: absolute;
+   	width: 44px;
+   	height: 44px;
+   	border-radius: 50%;
+   	background-size: cover;
+   	background-position: center;
+   	text-align: center;
+    line-height: 44px;
+    background-color: rgba(12,54,57,0.8);
+    left: 8px;
+    top: 8px;
+    color: #0ae9ff;
+}

@@ -1,0 +1,108 @@
+/* 图层选择 */
+.ejection{
+    width: 260px;
+    height: 140px;
+    background: url('../../../static/image/layout/common/layer-choose-bg2.png') no-repeat;
+    position: relative;
+    font-size: 12px;
+    color: #0ae9ff;
+}
+.ejection-top{
+	text-align: center;
+	line-height: 20px;
+	margin-bottom: 30px;
+}
+.ejection-content{
+	width: 100%;
+	height: 50px;
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.ejection-item{
+	height: 30px;
+	background-position: top center;
+	background-repeat: no-repeat;
+	box-sizing: border-box;
+	padding-top: 18px;
+	cursor: pointer;
+}
+.ejection-item-active{
+	background-position: bottom center;
+	color: #fcb90e;
+}
+.ejection-buttons{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-sizing: border-box;
+	padding: 0 24px;
+}
+.ejection-button{
+	width: 80px;
+	line-height: 24px;
+	text-align: center;
+	cursor: pointer;
+	background-image: url('../../../static/image/layout/common/layer-choose-button.png');
+}
+
+.layer-chose-item1{
+	background-image: url('../../../static/image/layout/common/layer-chose-camera.png');
+}
+.layer-chose-item2{
+	background-image: url('../../../static/image/layout/common/layer-chose-broadcast.png');
+}
+.layer-chose-item3{
+	background-image: url('../../../static/image/layout/common/layer-chose-person.png');
+}
+.angle-name-input{
+	width: 150px;
+	height: 25px;
+	font-size: 12px;
+	color:  #0ae9ff;
+	text-align: center;
+}
+.group-name-input{
+	width: 150px;
+	height: 25px;
+	font-size: 12px;
+	color:  #0ae9ff;
+	text-align: center;
+}
+
+/*处理情况,上报情况*/
+.ejection-handle-situation{
+	background-image: url('../../../static/image/layout/common/ejection-chose-handle.png');
+}
+.ejection-report-situation{
+	background-image: url('../../../static/image/layout/common/ejection-chose-report.png');
+}
+
+/*情况-通过审核,重新处理*/
+.ejection-pass-situation{
+	background-image: url('../../../static/image/layout/common/pass.png');
+}
+.ejection-redo-situation{
+	background-image: url('../../../static/image/layout/common/redo.png');
+}
+
+/*接受任务,拒绝任务*/
+.ejection-accept-task{
+	background-image: url('../../../static/image/layout/common/accept-task.png');
+}
+.ejection-refuse-task{
+	background-image: url('../../../static/image/layout/common/refuse-task.png');
+}
+
+/*任务-通过审核,重新执行,删除任务*/
+.ejection-pass-task{
+	background-image: url('../../../static/image/layout/common/pass.png');
+}
+.ejection-redo-task{
+	background-image: url('../../../static/image/layout/common/redo.png');
+}
+.ejection-delete-task{
+	background-image: url('../../../static/image/layout/common/delete.png');
+}

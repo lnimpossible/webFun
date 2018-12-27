@@ -1,0 +1,11 @@
+.device-name{
+    position: absolute;
+    z-index: 2;
+    max-width: 200px;
+    height: 25px;
+    background: rgba(58,238,255,0.5);
+    color: #ffffff;
+    border-radius: 20px;
+    padding: 0px 12px;
+    text-align: center;
+}

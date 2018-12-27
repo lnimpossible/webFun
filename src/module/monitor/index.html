@@ -1,0 +1,93 @@
+<div class="monitor">
+	<div class="logo">商务区综合管控中心</div>
+	<!--地理信息场景控制-->
+	<div class="menu-control-wrap flex justify-between point-event-auto" id="menu-control-wrap1">
+	</div>
+	<!--个人中心-->
+	<div class="personal-info point-event-auto">
+		<img class="personal-motion clockwise" src="static/image/layout/monitor/bg-menu-personal1.png"/>
+		<img class="personal-motion anticlockwise" src="static/image/layout/monitor/bg-menu-personal2.png"/>
+		<!--<img src="static/image/layout/monitor/bg-menu-personal3.png"/>-->
+		<div class="personal-info-avatar"></div>
+	</div>
+	<!--右上角消息聊天-->
+	<div class="monitor-rt open-chat point-event-auto">
+		<div class="open-chat-btn cursor-pointer ">
+			<img class="open-chat-motion clockwise" src="static/image/layout/monitor/bg-search-btn1.png"/>
+			<img class="open-chat-motion anticlockwise" src="static/image/layout/monitor/bg-search-btn2.png"/>
+			<img src="static/image/layout/chat.png"/>
+	    </div>
+		<div class="unread-number total-unread-number"><span></span></div>
+	</div>
+	<!--全局搜索-->
+	<div class="global-search flex item-center justify-between point-event-auto">
+		<div class="search-type">
+			<span class="mr5 search-type-name" type="all">全部</span>
+			<i class="fa fa-angle-down fa-2x"></i>
+			<ul class="search-type-list">
+				<li class="search-type-item mb5" type="all">全部</li>
+				<li class="search-type-item mb5" type="user">人员</li>
+				<li class="search-type-item mb5" type="device">设备</li>
+				<li class="search-type-item mb5" type="buliding">建筑</li>
+				<li class="search-type-item mb5" type="condition">情况</li>
+				<li class="search-type-item mb5" type="task">任务</li>
+			</ul>
+		</div>
+		<div class="g-search-box">
+			<input class="g-search-input" type="text"/>
+			<img class="clear-search-input" searchflag="searchflag" src="static/image/layout/global-search-cancel.png"/>
+			<div class="g-search-input-cover" searchflag="searchflag">
+				<img class="mr10 v-a-m" src="static/image/layout/magnifier.png" searchflag="searchflag"/>
+				<span searchflag="searchflag">搜索</span>
+			</div>
+		</div>
+		<div class="search-sure" searchflag="searchflag">确定</div>
+		<ul class="g-search-result nice-scroll"></ul>
+	</div>
+	<!--情况预览-->
+	<div class="situation-preview point-event-auto center-scale"></div>
+	<!--聊天预览-->
+	<div class="chat-preview point-event-auto"></div>
+	
+	<!--顶部(自由飞行按钮)-->
+	<div class="monitor-t point-event-auto">
+		<div class="aircraft">
+			<img src="./static/image/layout/aircraft.png"/>
+		</div>
+	</div>	
+	<!--左下角-->
+	<div class="monitor-lb point-event-auto" id="monitor-lb"></div>
+	<!--右下角-->
+	<div class="monitor-rb flex point-event-auto">
+		<div class="monitor-rb1" id="monitor-rb1">
+			<div class="monitor-chart-title">
+        		<span style="color: #ffb70a;margin-right:5px;">商务区</span>
+        		重要类型情况统计
+        	</div>
+			<div class="fl ml30 mt20 tac">
+				<p class="monitor-situation1">30</p>
+				<p class="monitor-situation-unit">单位/起</p>
+				<p class="monitor-situation-name">消防类情况</p>
+			</div>
+			<div class="fr mr30 mt20 tac">
+				<p class="monitor-situation2">24</p>
+				<p class="monitor-situation-unit">单位/起</p>
+				<p class="monitor-situation-name">治安类情况</p>
+			</div>
+		</div>
+		<div class="monitor-rb2 flex justify-center" id="monitor-rb2"></div>
+	</div>
+	<!--右边-->
+	<div class="monitor-r point-event-auto">
+		<div class="monitor-r1" id="monitor-r1"></div>
+		<div class="monitor-r2" id="monitor-r2"></div>
+		<div class="monitor-r3" id="monitor-r3"></div>
+	</div>
+	<!--中间-->
+	<div class="monitor-center point-event-auto" id="module-center">
+		<div class="monitor-center-box position-center point-event-auto" id="monitor-center-box">
+		</div>
+	</div>
+</div>
+<script src="./src/module/monitor/action.js"></script>
+<script src="./src/module/monitor/effect.js"></script>

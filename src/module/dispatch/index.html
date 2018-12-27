@@ -1,0 +1,143 @@
+<div class="dispatch">
+	<div class="logo">商务区综合管控中心</div>
+	<!--地理信息场景控制-->
+	<div class="menu-control-wrap flex justify-between point-event-auto" id="menu-control-wrap2">
+	</div>
+	<!--个人中心-->
+	<div class="personal-info point-event-auto">
+		<img class="personal-motion clockwise" src="static/image/layout/monitor/bg-menu-personal1.png"/>
+		<img class="personal-motion anticlockwise" src="static/image/layout/monitor/bg-menu-personal2.png"/>
+		<!--<img src="static/image/layout/monitor/bg-menu-personal3.png"/>-->
+		<div class="personal-info-avatar"></div>
+	</div>
+	<!--右上角消息聊天-->
+	<div class="dispatch-rt open-chat point-event-auto">
+		<div class="open-chat-btn cursor-pointer ">
+			<img class="open-chat-motion clockwise" src="static/image/layout/monitor/bg-search-btn1.png"/>
+			<img class="open-chat-motion anticlockwise" src="static/image/layout/monitor/bg-search-btn2.png"/>
+			<img src="static/image/layout/chat.png"/>
+	    </div>
+	</div>
+	<!--全局搜索-->
+	<div class="global-search flex item-center justify-between point-event-auto">
+		<div class="search-type">
+			<span class="mr5 search-type-name" type="all">全部</span>
+			<i class="fa fa-angle-down fa-2x"></i>
+			<ul class="search-type-list">
+				<li class="search-type-item mb5" type="all">全部</li>
+				<li class="search-type-item mb5" type="user">人员</li>
+				<li class="search-type-item mb5" type="device">设备</li>
+				<li class="search-type-item mb5" type="buliding">建筑</li>
+				<li class="search-type-item mb5" type="condition">情况</li>
+				<li class="search-type-item mb5" type="task">任务</li>
+			</ul>
+		</div>
+		<div class="g-search-box">
+			<input class="g-search-input" type="text"/>
+			<img class="clear-search-input" searchflag="searchflag" src="static/image/layout/global-search-cancel.png"/>
+			<div searchflag="searchflag" class="g-search-input-cover">
+				<img class="mr10 v-a-m" src="static/image/layout/magnifier.png" searchflag="searchflag"/>
+				<span searchflag="searchflag">搜索</span>
+			</div>
+		</div>
+		<div class="search-sure" searchflag="searchflag">确定</div>
+		<ul class="g-search-result nice-scroll"></ul>
+	</div>
+	<!--情况预览-->
+	<div class="dispatch-situation-preview point-event-auto center-scale"></div>
+	
+	<!--顶部(指挥调度菜单)-->
+	<div class="dispatch-menu-wrap flex justify-between point-event-auto">
+		<div class="dispatch-menu dispatch-menu1">人员管理</div>
+		<div class="dispatch-menu dispatch-menu2">设备管理</div>
+		<div class="dispatch-menu dispatch-menu3">情况管理</div>
+		<div class="dispatch-menu dispatch-menu4">任务管理</div>
+		<div class="dispatch-menu dispatch-menu5">预案管理</div>
+	</div>
+	<!--情况处理按钮-->
+	<div class="handle-situation flex justify-between point-event-auto">
+		<div action="communicate" class="handle-situation-btn handle-situation-btn1">
+			<span>通信</span>
+		</div>
+		<div action="deviceControl" class="handle-situation-btn handle-situation-btn2">
+			<span>设备控制</span>
+		</div>
+		<div action="dispatchTask" class="handle-situation-btn handle-situation-btn3">
+			<span>派发任务</span>
+		</div>
+	</div>
+	<!--情况态势范围滑块-->
+	<div class="situation-range-wrap flex justify-between item-center point-event-auto">
+		<span>0KM</span>
+		<div class="situation-range" id="situation-range">
+			<div class="situation-range-slide" id="situation-range-slide">
+				<div class="situation-range-up">
+					<div class="situation-range-up-tag" id="situation-range-up-tag">0KM</div>
+				</div>
+			</div>
+			<div class="situation-range-process" id="situation-range-process"></div>
+		</div>
+		<span>5KM</span>
+	</div>
+	<!--添加任务按钮-->
+	<!--<div class="dispatch-add-task point-event-auto">
+		<i class="fa fa-plus"></i>
+		创建任务
+	</div>-->
+	<div class="dispatch-add-situation point-event-auto">
+		<i class="fa fa-plus"></i>
+		创建情况
+	</div>
+	<!--左下角-->
+	<div class="dispatch-lb point-event-auto" id="dispatch-lb"></div>
+	<!--右下角-->
+	<div class="dispatch-rb point-event-auto" id="dispatch-rb"></div>
+	<!--右边-->
+	<div class="dispatch-r point-event-auto" id="dispatch-r"></div>
+	<!--情况统计-->
+	<div class="dispatch-statistic point-event-auto">
+		<div class="statistic flex-column justify-between">
+			<div class="circle">
+				<canvas id="circle1" width="80" height="80"></canvas>
+				<div class="circle-content">
+					<p class="circle-num" style="color: #fa5353;">20</p>
+					<p class="circle-text">未处理</p>
+				</div>
+			</div>
+			<div class="circle">
+				<canvas id="circle2" width="80" height="80"></canvas>
+				<div class="circle-content">
+					<p class="circle-num" style="color: #42f26a;">20</p>
+					<p class="circle-text">已处理</p>
+				</div>
+			</div>
+			<div class="circle">
+				<canvas id="circle3" width="80" height="80"></canvas>
+				<div class="circle-content">
+					<p class="circle-num" style="color: #fbae39;">20</p>
+					<p class="circle-text">重要情况</p>
+				</div>
+			</div>
+			<div class="circle">
+				<canvas id="circle4" width="80" height="80"></canvas>
+				<div class="circle-content">
+					<p class="circle-num" style="color: #22f4cd;">20</p>
+					<p class="circle-text">一般情况</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--中间-->
+	<div class="dispatch-center point-event-auto" id="module-center">
+		<div class="dispatch-center-box position-center point-event-auto" id="dispatch-center-box">
+		</div>
+	</div>
+</div>
+<script src="./src/module/dispatch/person.js"></script>
+<script src="./src/module/dispatch/device.js"></script>
+<script src="./src/module/dispatch/situation.js"></script>
+<script src="./src/module/dispatch/task.js"></script>
+<script src="./src/module/dispatch/plan.js"></script>
+
+<script src="./src/module/dispatch/action.js"></script>
+<script src="./src/module/dispatch/effect.js"></script>

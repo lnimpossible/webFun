@@ -1,0 +1,435 @@
+@import url("../../lib/plugin/pangu1.50/Widgets/widgets.css");
+@import url("../../lib/font-awesome-4.7.0/css/font-awesome.min.css");
+@import url("../../lib/css/reset.css");
+@import url("../../lib/css/swiper.min.css");
+@import url("../../lib/css/animate.min.css");
+
+@import url("./public.css");
+@import url("../components/components.css");
+@import url("./scene.css");
+@import url("../module/monitor/monitor.css");
+@import url("../module/dispatch/dispatch.css");
+@import url("../module/analysis/analysis.css");
+@import url("../module/special/special.css");
+@import url("../module/freeFly/freefly.css");
+@import url("../module/inside/index.css");
+/*地理信息场景*/
+.geo-scene-wrap{
+	width: 100%;
+	height: 100%;
+	position: relative;
+
+}
+.geo-scene{
+	width: 100%;
+	height: 100%;
+}
+.dimension2{
+	display: none;
+}
+.geo-scene-switch{
+	position: absolute;
+	top: 66px;
+	left: 18px;
+	z-index: 15;
+	width: 240px;
+	height: 128px;
+	background-image: url('../../static/image/layout/bg-geo-scene-switch1.png');
+}
+@media screen and (min-height: 1000px) {
+    .geo-scene-switch{
+		top: 77px;
+	}
+}
+.geo-scene-switched{
+	background-image: url('../../static/image/layout/bg-geo-scene-switch2.png');
+}
+.geo-scene-btn{
+	width: calc(100% - 20px);
+	line-height: 24px;
+	border-top: 1px solid #2b97c9;
+	border-bottom: 1px solid #2b97c9;
+	background: rgba(8,53,72,0.6);
+	color: #0ae9ff;
+	font-size: 14px;
+	margin: 94px auto 0;
+	box-sizing: border-box;
+	padding-left: 12px;
+	user-select: none;
+}
+.geo-scene-btn:hover{
+	color: #fff200;
+}
+.double-right{
+	font-size: 16px;
+}
+
+/*聊天*/
+.chat-box{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 12;
+	display: none;
+	background: rgba(0,0,0,0.3);
+}
+
+/*图片,视频查看*/
+.picture-video{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 20;
+	display: none;
+	background: rgba(0,0,0,0.8);
+}
+.picture-video-close{
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	font-size: 50px;
+	color: #dd3131;
+	cursor: pointer;
+}
+.picture-box{
+	width: 100%;
+	height: 100%;
+	position: relative;
+}
+.picture-item{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	opacity: 0;
+	transition: all 0.5s;
+	height: 100%;
+	display: flex;
+	align-items: center;
+}
+.picture-item>img{
+	max-height: 100%;
+}
+.picture-item-show{
+	opacity: 1;
+}
+.arrow-box{
+	width: 80%;
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%);
+	color: #0ae9ff;
+	font-size: 50px;
+}
+.pre-picture{
+	cursor: pointer;
+}
+.next-picture{
+	cursor: pointer;
+}
+
+/*模块*/
+.module-wrap{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	pointer-events: none;
+	overflow: hidden;
+	z-index: 11;
+}
+/*主菜单*/
+.menu-master-wrap{
+	position: absolute;
+    left: 50%;
+    bottom: 24px;
+    z-index: 10;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 40px;
+}
+.hign-index{
+	z-index: 20;
+}
+.menu-master{
+	width: 44px;
+    height: 36px;
+    border: 2px solid #116284;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #012e2a;
+}
+.menu-master:hover{
+	transform: scale(1.1);
+}
+.menu-master-active{
+	background-position: bottom center;
+	border-color: #fcb90e;
+}
+.menu-master1{
+	background-image: url(../../static/image/layout/bg-menu-master1.png);
+}
+.menu-master2{
+	background-image: url(../../static/image/layout/bg-menu-master2.png);
+}
+.menu-master3{
+	background-image: url(../../static/image/layout/bg-menu-master3.png);
+}
+.menu-master4{
+	background-image: url(../../static/image/layout/bg-menu-master4.png);
+}
+.menu-master5{
+	background-image: url(../../static/image/layout/bg-menu-master5.png);
+}
+
+/*全局搜索*/
+.global-search{
+	width: 356px;
+	height: 28px;
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	transform: translateX(-50%);
+	color: #0ae9ff;
+	font-size: 14px;
+}
+.search-type{
+	width: 68px;
+	height: 28px;
+	border-radius: 14px;
+	background: rgba(12,54,57,0.8);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	position: relative;
+}
+.search-type-list{
+	width: 100%;
+	position: absolute;
+	top: 30px;
+	text-align: center;
+	background: rgba(12,54,57,0.8);
+	border-radius: 4px;
+	display: none;
+}
+.search-type-item{
+	cursor: pointer;
+}
+.search-type-item:hover{
+	
+}
+.g-search-box{
+	width: 200px;
+	height: 100%;
+	position: relative;
+	text-align: center;
+	line-height: 28px;
+}
+.g-search-input{
+	width: 100%;
+	height: 100%;
+	border: none;
+	background: rgba(12,54,57,0.8);
+	border-radius: 14px;
+	outline: none;
+	color: #27aae1;
+	text-align: center;
+}
+.clear-search-input{
+	position: absolute;
+	right: 10px;
+	top: 6px;
+	display: none;
+	cursor: pointer;
+}
+.g-search-input-cover{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.search-sure{
+	width: 68px;
+	height: 28px;
+	border-radius: 14px;
+	background: rgba(12,54,57,0.8);
+	text-align: center;
+	line-height: 28px;
+	cursor: pointer;
+}
+
+.g-search-result{
+	width: 100%;
+	height: 240px;
+	background: url('../../static/image/layout/global-search-res-bg.png');
+	margin: 5px auto 0;
+	box-sizing: border-box;
+	padding: 20px 20px 0;
+	background-size: 100% 100%;
+	font-size: 12px;
+	color: #0ae9ff;
+	display: none;
+	position: absolute;
+    top: 27px;
+}
+.g-search-result-group{
+	width: 100%;
+}
+.g-search-result-groupname{
+	width: 100%;
+	line-height: 24px;
+	border-radius: 4px;
+	background: #0c3639;
+	box-sizing: border-box;
+	padding-left: 10px;
+}
+.g-search-result-item{
+	color: #fff;
+	margin: 10px 0 10px 10px;
+	cursor: pointer;
+}
+.g-search-result-item:hover{
+	color: #ffd518;
+}
+
+/*logo*/
+.logo{
+	font-size: 24px;
+	color: #0ae9ff;
+	width: 260px;
+	line-height: 36px;
+	position: absolute;
+	top: 10px;
+	left: 16px;
+}
+
+/*三维场景控制*/
+.menu-control-wrap{
+	position: absolute;
+	top: 26px;
+	/*right: 145px;*/
+	right: 9%;
+	/*width: 240px;*/
+	width: 10%;
+	height: 20px;
+	z-index: 10;
+}
+
+/*打开聊天按钮*/
+.open-chat{
+	position: absolute;
+	right: 30px;
+	top: 112px;
+}
+.open-chat-btn{
+	width: 56px;
+	height: 56px;
+	line-height: 66px;
+    text-align: center;
+    cursor: pointer;
+}
+.open-chat-motion{
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: auto;
+}
+
+/*改变title样式 --begin*/
+[c-title]{
+	position: relative;
+}
+[c-title]:after{
+	content: attr(c-title);
+	position: absolute;
+	left: 50%;
+	bottom: 100%;
+	transform: translate(-50%,0);
+	color: #fff;
+	text-shadow: 0 -1px 0px black;
+	box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+	background: #232121;
+	border-radius: 2px;
+	padding: 3px 10px !important;
+	font-size: 12px;
+	white-space: nowrap;
+	transition:all .3s;
+	opacity: 0;
+	visibility: hidden;
+	max-height: 32px;
+	line-height: 32px;
+}
+[c-title]:hover:after{
+	transition-delay: 100ms;
+	visibility: visible;
+	transform: translate(-50%,-6px);
+	opacity: 1;
+}
+[c-title-b]{
+	position: relative;
+}
+[c-title-b]:after{
+	content: attr(c-title-b);
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	transform: translate(-50%,0);
+	color: #fff;
+	text-shadow: 0 -1px 0px black;
+	box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+	background: #232121;
+	border-radius: 2px;
+	padding: 3px 10px !important;
+	font-size: 12px;
+	white-space: nowrap;
+	transition:all .3s;
+	opacity: 0;
+	visibility: hidden;
+	max-height: 32px;
+	line-height: 32px;
+}
+[c-title-b]:hover:after{
+	transition-delay: 100ms;
+	visibility: visible;
+	transform: translate(-50%,6px);
+	opacity: 1;
+}
+[c-title-r]{
+	position: relative;
+}
+[c-title-r]:after{
+	content: attr(c-title-r);
+	position: absolute;
+	left: 100%;
+	top: 50%;
+	transform: translate(0,-50%);
+	color: #fff;
+	text-shadow: 0 -1px 0px black;
+	box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.3);
+	background: #060e4d;
+	border-radius: 10px;
+	width: 160px;
+	line-height: 44px;
+	font-size: 12px;
+	white-space: nowrap;
+	transition:all .3s;
+	opacity: 0;
+	visibility: hidden;
+}
+[c-title-r]:hover:after{
+	transition-delay: 100ms;
+	visibility: visible;
+	transform: translate(6px,-50%);
+	opacity: 1;
+}
+/*改变title样式 --end*/
